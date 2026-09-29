@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paavan Niramay Wellness Kendra | Dr. Pawan Goyal, BPT</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    h1, h2, h3, .font-heading { font-family: 'Playfair Display', serif; }
+    .hero-gradient { background: linear-gradient(135deg, #064e3b 0%, #065f46 60%, #047857 100%); }
+    .card-shadow { box-shadow: 0 10px 25px -5px rgba(6, 78, 59, 0.08), 0 8px 10px -6px rgba(6, 78, 59, 0.04); }
+  </style>
+</head>
+<body class="bg-stone-50 text-stone-800 antialiased selection:bg-emerald-600 selection:text-white">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-emerald-950 text-emerald-200 text-xs py-2 px-4 border-b border-emerald-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-4">
+        <span><i class="fa-solid fa-location-dot text-amber-400 mr-1.5"></i> <span id="topAddressText">Model Town / GT Road, Panipat, Haryana</span></span>
+        <span class="hidden md:inline text-emerald-700">|</span>
+        <span class="hidden md:inline"><i class="fa-solid fa-clock text-amber-400 mr-1.5"></i> <span id="topHoursText">Mon - Sat: 9:30 AM - 7:00 PM (By Appointment)</span></span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="tel:+919876543210" id="topPhoneLink" class="hover:text-white transition flex items-center gap-1.5 font-medium">
+          <i class="fa-solid fa-phone text-emerald-400"></i> <span id="topPhoneText">+91 98765 43210</span>
+        </a>
+        <button onclick="openAdminModal()" class="text-xs bg-emerald-800 hover:bg-emerald-700 text-emerald-100 px-2.5 py-0.5 rounded transition flex items-center gap-1 border border-emerald-700">
+          <i class="fa-solid fa-lock text-[10px]"></i> Admin Portal
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-xl bg-emerald-800 text-amber-400 flex items-center justify-center font-bold text-2xl shadow-inner">
+          <i class="fa-solid fa-spa"></i>
+        </div>
+        <div>
+          <span class="block text-xl font-bold tracking-tight text-emerald-950 font-heading">Paavan Niramay</span>
+          <span class="block text-xs uppercase tracking-widest text-emerald-700 font-semibold">Wellness Kendra & Spine Care</span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-stone-600">
+        <a href="#about" class="hover:text-emerald-700 transition">About Dr. Goyal</a>
+        <a href="#services" class="hover:text-emerald-700 transition">Therapies</a>
+        <a href="#decompression" class="hover:text-emerald-700 transition">Spine Decompression</a>
+        <a href="#videos" class="hover:text-emerald-700 transition">Videos</a>
+        <a href="#testimonials" class="hover:text-emerald-700 transition">Testimonials</a>
+        <a href="#gallery" class="hover:text-emerald-700 transition">Photos</a>
+        <a href="#contact" class="hover:text-emerald-700 transition">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <button onclick="openBookingModal()" class="bg-emerald-700 hover:bg-emerald-800 text-white px-5 py-2.5 rounded-xl font-medium text-sm shadow-md shadow-emerald-900/10 transition flex items-center gap-2">
+          <i class="fa-regular fa-calendar-check"></i>
+          <span>Book Appointment</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden hero-gradient text-white py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 bg-emerald-900/60 border border-emerald-500/30 px-3.5 py-1.5 rounded-full text-xs font-medium text-emerald-200">
+            <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+            Non-Surgical Spine & Joint Wellness Center
+          </div>
+          
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
+            Relieve Chronic Pain Without Surgery.
+          </h1>
+          
+          <p class="text-lg text-emerald-100 max-w-2xl leading-relaxed">
+            Led by <span class="font-semibold text-white underline decoration-amber-400 decoration-2">Dr. Pawan Goyal, BPT</span>. We integrate specialized Acupuncture, Computerized Spinal Decompression, Cupping, Hijama, Chiropractic care, and Physiotherapy under one roof in Panipat.
+          </p>
+
+          <div class="pt-2 flex flex-wrap gap-4">
+            <button onclick="openBookingModal()" class="bg-amber-400 hover:bg-amber-300 text-stone-900 px-6 py-3.5 rounded-xl font-bold text-sm transition shadow-lg flex items-center gap-2">
+              <span>Consult Dr. Pawan Goyal</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <a href="#services" class="bg-emerald-800/80 hover:bg-emerald-800 text-emerald-100 border border-emerald-600/40 px-6 py-3.5 rounded-xl font-medium text-sm transition">
+              Explore Our Therapies
+            </a>
+          </div>
+
+          <!-- Feature badges -->
+          <div class="pt-6 grid grid-cols-3 gap-4 border-t border-emerald-700/60 text-emerald-200 text-xs sm:text-sm">
+            <div>
+              <p class="text-white text-xl font-bold">100%</p>
+              <p>Drugless & Non-Invasive</p>
+            </div>
+            <div>
+              <p class="text-white text-xl font-bold">Advanced</p>
+              <p>Decompression Machine</p>
+            </div>
+            <div>
+              <p class="text-white text-xl font-bold">Customized</p>
+              <p>Personalized Care Plan</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-full max-w-md">
+            <div class="absolute -inset-2 bg-gradient-to-r from-amber-400 to-emerald-400 rounded-3xl blur-xl opacity-30"></div>
+            <div class="relative bg-emerald-900/90 border border-emerald-600/40 rounded-3xl p-6 text-stone-100 card-shadow">
+              <div class="relative h-64 rounded-2xl overflow-hidden mb-5 bg-emerald-950 flex items-center justify-center">
+                <img id="doctorHeroPhoto" src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=800&auto=format&fit=crop" alt="Dr. Pawan Goyal, BPT" class="w-full h-full object-cover object-top">
+                <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/80 via-transparent"></div>
+                <div class="absolute bottom-3 left-4 right-4">
+                  <span class="bg-amber-400 text-stone-900 text-[11px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Chief Practitioner</span>
+                  <h3 class="text-xl font-bold text-white mt-1">Dr. Pawan Goyal</h3>
+                  <p class="text-xs text-emerald-200 font-medium">BPT (Bachelor of Physiotherapy)</p>
+                </div>
+              </div>
+              
+              <div class="space-y-3 text-xs text-emerald-100">
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-amber-400"></i>
+                  <span>Master in Specialized Acupuncture & Pain Release</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-amber-400"></i>
+                  <span>Certified in Spine Decompression Machine Care</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-amber-400"></i>
+                  <span>Holistic Hijama, Cupping & Chiropractic Alignment</span>
+                </div>
+              </div>
+
+              <div class="mt-5 pt-4 border-t border-emerald-800 flex justify-between items-center text-xs">
+                <span class="text-emerald-300">Location: <strong id="heroCityText" class="text-white">Panipat, Haryana</strong></span>
+                <span class="text-amber-300 font-semibold"><i class="fa-solid fa-certificate mr-1"></i> BPT Certified</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Doctor Bio Section -->
+  <section id="about" class="py-16 bg-white border-b border-stone-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid md:grid-cols-12 gap-10 items-center">
+        <div class="md:col-span-5 text-center">
+          <div class="inline-block relative">
+            <div class="w-64 h-64 sm:w-72 sm:h-72 rounded-2xl overflow-hidden mx-auto border-4 border-emerald-100 shadow-xl bg-stone-100">
+              <img id="doctorAboutPhoto" src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=800&auto=format&fit=crop" alt="Dr. Pawan Goyal, BPT" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-emerald-900 text-white px-5 py-1.5 rounded-full text-xs font-semibold shadow-lg whitespace-nowrap">
+              Dr. Pawan Goyal, BPT
+            </div>
+          </div>
+        </div>
+        <div class="md:col-span-7 space-y-4">
+          <span class="text-xs uppercase font-bold tracking-widest text-emerald-700">Practitioner Profile</span>
+          <h2 class="text-3xl font-bold text-stone-900 font-heading">Focused On Restoring Natural Movement & Relieving Pain</h2>
+          <p class="text-stone-600 text-sm sm:text-base leading-relaxed">
+            At <strong>Paavan Niramay Wellness Kendra</strong>, <strong>Dr. Pawan Goyal, BPT</strong> brings a pure, patient-centric approach to chronic neuromuscular and spinal conditions. With his foundation in physiotherapy (BPT) combined with years of practical expertise in clinical acupuncture and spine traction, he creates custom plans tailored to each individual.
+          </p>
+          <p class="text-stone-600 text-sm leading-relaxed">
+            Patients suffering from severe disc prolapse, sciatica, stiff neck, chronic backaches, and joint degeneration find lasting recovery without relying on heavy painkillers or risky surgeries.
+          </p>
+
+          <div class="grid grid-cols-2 gap-4 pt-3">
+            <div class="p-3 bg-stone-50 rounded-xl border border-stone-200">
+              <div class="font-bold text-emerald-900 text-sm">Degree Qualification</div>
+              <div class="text-xs text-stone-600">BPT (Bachelor of Physiotherapy)</div>
+            </div>
+            <div class="p-3 bg-stone-50 rounded-xl border border-stone-200">
+              <div class="font-bold text-emerald-900 text-sm">Core Focus</div>
+              <div class="text-xs text-stone-600">Spine, Disc & Nerve Health</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 bg-stone-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs uppercase font-bold tracking-widest text-emerald-700">Integrative Healing</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-stone-900 font-heading mt-1">Our Core Therapies</h2>
+        <p class="text-stone-600 text-sm mt-2">Comprehensive, drugless treatments designed for rapid pain relief and long-term recovery.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Acupuncture -->
+        <div class="bg-white p-7 rounded-2xl border border-stone-200/80 card-shadow hover:-translate-y-1 transition duration-200">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center text-xl mb-5">
+            <i class="fa-solid fa-feather-pointed"></i>
+          </div>
+          <h3 class="text-xl font-bold text-stone-900 mb-2 font-heading">Acupuncture</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">
+            Ultra-fine, sterile needles stimulate nerve pathways, boost blood micro-circulation, and release the body's natural endorphins for immediate pain relief.
+          </p>
+          <div class="mt-4 pt-4 border-t border-stone-100 flex items-center text-xs font-semibold text-emerald-700">
+            <span>Ideal for Sciatica, Migraine, Frozen Shoulder</span>
+          </div>
+        </div>
+
+        <!-- Acupressure -->
+        <div class="bg-white p-7 rounded-2xl border border-stone-200/80 card-shadow hover:-translate-y-1 transition duration-200">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center text-xl mb-5">
+            <i class="fa-solid fa-hand-holding-medical"></i>
+          </div>
+          <h3 class="text-xl font-bold text-stone-900 mb-2 font-heading">Acupressure</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">
+            Precise finger pressure applied along reflex meridians to release muscular tension, improve nervous flow, and dissolve deep muscle knots safely.
+          </p>
+          <div class="mt-4 pt-4 border-t border-stone-100 flex items-center text-xs font-semibold text-emerald-700">
+            <span>Non-invasive deep relaxation & balance</span>
+          </div>
+        </div>
+
+        <!-- Cupping Therapy -->
+        <div class="bg-white p-7 rounded-2xl border border-stone-200/80 card-shadow hover:-translate-y-1 transition duration-200">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center text-xl mb-5">
+            <i class="fa-solid fa-circle-nodes"></i>
+          </div>
+          <h3 class="text-xl font-bold text-stone-900 mb-2 font-heading">Cupping Therapy (Dry)</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">
+            Suction cups lift the fascia and muscles upwards, draining stagnant toxins, releasing rigid back knots, and supercharging local oxygenation.
+          </p>
+          <div class="mt-4 pt-4 border-t border-stone-100 flex items-center text-xs font-semibold text-emerald-700">
+            <span>Rapid relief for back spasms & muscle fatigue</span>
+          </div>
+        </div>
+
+        <!-- Hijama Therapy -->
+        <div class="bg-white p-7 rounded-2xl border border-stone-200/80 card-shadow hover:-translate-y-1 transition duration-200">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center text-xl mb-5">
+            <i class="fa-solid fa-shield-heart"></i>
+          </div>
+          <h3 class="text-xl font-bold text-stone-900 mb-2 font-heading">Hijama Therapy (Wet Cupping)</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">
+            Superficial, sterile micro-incisions draw out toxic interstitial fluid and sluggish blood, boosting natural cellular immunity and decreasing inflammation.
+          </p>
+          <div class="mt-4 pt-4 border-t border-stone-100 flex items-center text-xs font-semibold text-emerald-700">
+            <span>Clinical detox, chronic inflammation & back pain</span>
+          </div>
+        </div>
+
+        <!-- Chiropractic Care -->
+        <div class="bg-white p-7 rounded-2xl border border-stone-200/80 card-shadow hover:-translate-y-1 transition duration-200">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center text-xl mb-5">
+            <i class="fa-solid fa-bone"></i>
+          </div>
+          <h3 class="text-xl font-bold text-stone-900 mb-2 font-heading">Chiropractic Adjustment</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">
+            Gentle spinal adjustments restore proper vertebral alignment, remove disc compression on spinal nerves, and quickly improve body biomechanics.
+          </p>
+          <div class="mt-4 pt-4 border-t border-stone-100 flex items-center text-xs font-semibold text-emerald-700">
+            <span>Posture correction & subluxation release</span>
+          </div>
+        </div>
+
+        <!-- Physiotherapy -->
+        <div class="bg-white p-7 rounded-2xl border border-stone-200/80 card-shadow hover:-translate-y-1 transition duration-200">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center text-xl mb-5">
+            <i class="fa-solid fa-person-walking"></i>
+          </div>
+          <h3 class="text-xl font-bold text-stone-900 mb-2 font-heading">Physiotherapy Rehabilitation</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">
+            Targeted therapeutic exercises, joint mobilization, electrotherapy, and core strengthening overseen directly by Dr. Pawan Goyal, BPT.
+          </p>
+          <div class="mt-4 pt-4 border-t border-stone-100 flex items-center text-xs font-semibold text-emerald-700">
+            <span>Post-injury rehab, arthritis & spinal strength</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Spinal Decompression Machine Section -->
+  <section id="decompression" class="py-20 bg-stone-900 text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-6 space-y-6">
+          <span class="text-xs uppercase font-bold tracking-widest text-amber-400">Featured Technology</span>
+          <h2 class="text-3xl sm:text-4xl font-bold font-heading">Computerized Spinal Decompression Machine</h2>
+          <p class="text-stone-300 text-sm sm:text-base leading-relaxed">
+            Our clinic is equipped with advanced motorized spinal decompression therapy machines. Unlike ordinary traction, this technology delivers precise, logarithmic distraction force to target specific collapsed disc segments (L4-L5, L5-S1, or Cervical discs).
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex items-start gap-4">
+              <div class="w-9 h-9 rounded-lg bg-emerald-800 text-amber-400 flex items-center justify-center shrink-0 text-sm font-bold">1</div>
+              <div>
+                <h4 class="font-bold text-sm text-white">Negative Intra-Discal Pressure (Vacuum Effect)</h4>
+                <p class="text-xs text-stone-400 mt-0.5">Pulls protruding, bulged disc material back into place away from the spinal nerve root.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-9 h-9 rounded-lg bg-emerald-800 text-amber-400 flex items-center justify-center shrink-0 text-sm font-bold">2</div>
+              <div>
+                <h4 class="font-bold text-sm text-white">Nutrient & Fluid Imbibition</h4>
+                <p class="text-xs text-stone-400 mt-0.5">Increases the flow of essential water, oxygen, and nutrients into the disc to accelerate natural healing.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-9 h-9 rounded-lg bg-emerald-800 text-amber-400 flex items-center justify-center shrink-0 text-sm font-bold">3</div>
+              <div>
+                <h4 class="font-bold text-sm text-white">Safe, Relaxing & Pain-Free</h4>
+                <p class="text-xs text-stone-400 mt-0.5">Comfortable treatment sessions without any surgical incisions, hospital stays, or downtime.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4">
+            <button onclick="openBookingModal()" class="bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-3 rounded-xl font-bold text-xs uppercase tracking-wider transition">
+              Book A Spine Evaluation
+            </button>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="rounded-2xl border border-stone-700 bg-stone-800 p-6 space-y-4">
+            <div class="flex items-center justify-between pb-3 border-b border-stone-700 text-xs">
+              <span class="text-amber-400 font-semibold"><i class="fa-solid fa-wave-square mr-1"></i> Target Disc Segments</span>
+              <span class="text-stone-400">Non-Surgical Spine Treatment</span>
+            </div>
+            <div class="grid grid-cols-2 gap-3 text-xs">
+              <div class="bg-stone-900/80 p-3.5 rounded-xl border border-stone-700/60">
+                <span class="text-emerald-400 font-bold block mb-1">Lumbar Spine</span>
+                <span class="text-stone-300">L3-L4, L4-L5, L5-S1 Disc Bulge, Sciatica, Degenerative Disc Disease</span>
+              </div>
+              <div class="bg-stone-900/80 p-3.5 rounded-xl border border-stone-700/60">
+                <span class="text-emerald-400 font-bold block mb-1">Cervical Spine</span>
+                <span class="text-stone-300">C4-C5, C5-C6, C6-C7 Herniation, Radiating Arm Pain, Stiff Neck</span>
+              </div>
+            </div>
+            <div class="p-4 rounded-xl bg-emerald-950/60 border border-emerald-800/80 text-xs text-emerald-200">
+              <p><strong>Note:</strong> Bring your latest MRI or X-Ray films during your consultation with Dr. Pawan Goyal for an accurate decompressive pull angle calculation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section id="videos" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div>
+          <span class="text-xs uppercase font-bold tracking-widest text-emerald-700">Real Procedures</span>
+          <h2 class="text-3xl font-bold text-stone-900 font-heading mt-1">Treatment & Clinical Videos</h2>
+          <p class="text-stone-600 text-sm mt-1">Watch live patient treatments, spinal decompression sessions, and acupuncture demos.</p>
+        </div>
+        <button onclick="openAddVideoModal()" class="text-xs bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-semibold px-4 py-2.5 rounded-xl border border-emerald-200 transition flex items-center gap-1.5 w-fit">
+          <i class="fa-solid fa-plus"></i> Add Video (Admin)
+        </button>
+      </div>
+
+      <!-- Video Grid (Populated dynamically) -->
+      <div id="videoContainer" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-20 bg-stone-50 border-t border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div>
+          <span class="text-xs uppercase font-bold tracking-widest text-emerald-700">Patient Experiences</span>
+          <h2 class="text-3xl font-bold text-stone-900 font-heading mt-1">What Our Patients Say</h2>
+          <p class="text-stone-600 text-sm mt-1">Real recovery stories from individuals treated by Dr. Pawan Goyal, BPT.</p>
+        </div>
+        <button onclick="openAddTestimonialModal()" class="text-xs bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-semibold px-4 py-2.5 rounded-xl border border-emerald-200 transition flex items-center gap-1.5 w-fit">
+          <i class="fa-solid fa-plus"></i> Add Review (Admin)
+        </button>
+      </div>
+
+      <!-- Testimonials Grid (Dynamic) -->
+      <div id="testimonialContainer" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery Section -->
+  <section id="gallery" class="py-20 bg-white border-t border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div>
+          <span class="text-xs uppercase font-bold tracking-widest text-emerald-700">Inside The Clinic</span>
+          <h2 class="text-3xl font-bold text-stone-900 font-heading mt-1">Clinic & Facility Photos</h2>
+          <p class="text-stone-600 text-sm mt-1">Take a glimpse of our serene environment, therapy rooms, and equipment.</p>
+        </div>
+        <button onclick="openAddPhotoModal()" class="text-xs bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-semibold px-4 py-2.5 rounded-xl border border-emerald-200 transition flex items-center gap-1.5 w-fit">
+          <i class="fa-solid fa-plus"></i> Add Photo (Admin)
+        </button>
+      </div>
+
+      <!-- Photos Grid (Dynamic) -->
+      <div id="galleryContainer" class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"></div>
+    </div>
+  </section>
+
+  <!-- Contact & Location Section -->
+  <section id="contact" class="py-20 bg-stone-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-10">
+        
+        <div class="lg:col-span-5 space-y-6">
+          <span class="text-xs uppercase font-bold tracking-widest text-emerald-700">Reach Us</span>
+          <h2 class="text-3xl font-bold text-stone-900 font-heading">Visit Our Wellness Center</h2>
+          <p class="text-stone-600 text-sm leading-relaxed">
+            Have questions or need to book an in-person assessment with <strong>Dr. Pawan Goyal, BPT</strong>? Get in touch with us using the details below.
+          </p>
+
+          <div class="space-y-4">
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-white border border-stone-200">
+              <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-stone-900 text-sm">Clinic Address</h4>
+                <p id="contactAddressText" class="text-xs text-stone-600 mt-1">Model Town / GT Road, Panipat, Haryana</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-white border border-stone-200">
+              <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-stone-900 text-sm">Direct Phone</h4>
+                <p class="text-xs text-stone-600 mt-1">
+                  <a href="tel:+919876543210" id="contactPhoneLink" class="text-emerald-700 font-semibold hover:underline">
+                    <span id="contactPhoneText">+91 98765 43210</span>
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-white border border-stone-200">
+              <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-stone-900 text-sm">Working Timings</h4>
+                <p id="contactHoursText" class="text-xs text-stone-600 mt-1">Mon - Sat: 9:30 AM - 7:00 PM (Prior Appointment Recommended)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7">
+          <div class="bg-white rounded-2xl p-8 border border-stone-200 card-shadow">
+            <h3 class="text-2xl font-bold text-stone-900 font-heading mb-2">Request A Consultation</h3>
+            <p class="text-stone-500 text-xs mb-6">Leave your details and Dr. Goyal's clinical team will confirm your time slot.</p>
+
+            <form onsubmit="handleAppointmentSubmit(event)" class="space-y-4">
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-semibold text-stone-700 mb-1">Your Full Name *</label>
+                  <input type="text" required placeholder="e.g. Ramesh Kumar" class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-stone-300 focus:outline-none focus:border-emerald-600">
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-stone-700 mb-1">Mobile / WhatsApp Number *</label>
+                  <input type="tel" required placeholder="e.g. +91 98765 43210" class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-stone-300 focus:outline-none focus:border-emerald-600">
+                </div>
+              </div>
+
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-semibold text-stone-700 mb-1">Preferred Therapy</label>
+                  <select class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-stone-300 focus:outline-none focus:border-emerald-600">
+                    <option>General Pain Assessment</option>
+                    <option>Acupuncture Session</option>
+                    <option>Spine Decompression Machine</option>
+                    <option>Cupping / Hijama Therapy</option>
+                    <option>Chiropractic Adjustment</option>
+                    <option>Physiotherapy Rehab</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-stone-700 mb-1">Preferred Date</label>
+                  <input type="date" class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-stone-300 focus:outline-none focus:border-emerald-600">
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-stone-700 mb-1">Symptoms / Issue Description</label>
+                <textarea rows="3" placeholder="Briefly describe your pain (e.g. Sciatica in right leg, L4-L5 slip disc, cervical neck stiffness)..." class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-stone-300 focus:outline-none focus:border-emerald-600"></textarea>
+              </div>
+
+              <button type="submit" class="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-3.5 rounded-xl transition text-sm shadow-md">
+                Confirm Appointment Request
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-emerald-950 text-emerald-300 py-12 border-t border-emerald-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8 text-xs">
+        <div>
+          <span class="block text-lg font-bold text-white font-heading mb-2">Paavan Niramay</span>
+          <p class="text-emerald-400/80 leading-relaxed mb-3">
+            Wellness Kendra & Advanced Non-Surgical Spine Care Clinic in Panipat. Led by Dr. Pawan Goyal, BPT.
+          </p>
+          <span class="text-stone-400">Pure, drugless healing & spine restoration.</span>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-3 uppercase tracking-wider text-[11px]">Core Services</h4>
+          <ul class="space-y-1.5 text-emerald-300/80">
+            <li>Acupuncture & Acupressure</li>
+            <li>Spine Decompression Machine</li>
+            <li>Cupping (Dry & Wet) & Hijama</li>
+            <li>Chiropractic Alignment</li>
+            <li>Physiotherapy Rehabilitation</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-3 uppercase tracking-wider text-[11px]">Clinic Information</h4>
+          <p class="text-emerald-300/80 mb-2"><strong>Location:</strong> <span id="footerAddressText">Panipat, Haryana</span></p>
+          <p class="text-emerald-300/80 mb-2"><strong>Call:</strong> <span id="footerPhoneText">+91 98765 43210</span></p>
+          <p class="text-emerald-300/80"><strong>Hours:</strong> <span id="footerHoursText">9:30 AM - 7:00 PM</span></p>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-3 uppercase tracking-wider text-[11px]">Admin Management</h4>
+          <p class="text-emerald-300/80 mb-3 leading-relaxed">
+            Need to update address, phone number, add patient videos, or new clinic photos?
+          </p>
+          <button onclick="openAdminModal()" class="bg-emerald-800 hover:bg-emerald-700 text-white px-3 py-1.5 rounded-lg text-xs font-medium border border-emerald-600 transition flex items-center gap-1.5">
+            <i class="fa-solid fa-gear"></i> Open Admin Panel
+          </button>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-emerald-900/60 text-center text-xs text-emerald-500">
+        &copy; <span id="yearSpan"></span> Paavan Niramay Wellness Kendra. All rights reserved. Dr. Pawan Goyal, BPT.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== MODALS ==================== -->
+
+  <!-- 1. Admin PIN Modal -->
+  <div id="adminPinModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-sm w-full p-6 text-center card-shadow animate-scale">
+      <div class="w-12 h-12 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
+        <i class="fa-solid fa-lock"></i>
+      </div>
+      <h3 class="text-lg font-bold text-stone-900 font-heading">Admin Authentication</h3>
+      <p class="text-xs text-stone-500 mt-1 mb-4">Enter Admin PIN to manage clinic details, videos, reviews and photos. (Default: <strong>1234</strong>)</p>
+      
+      <input type="password" id="adminPinInput" placeholder="Enter 4-digit PIN" maxlength="6" class="w-full text-center tracking-widest text-xl font-bold py-2 border border-stone-300 rounded-xl mb-4 focus:outline-none focus:border-emerald-600">
+      
+      <div class="flex gap-2">
+        <button onclick="closeAdminPinModal()" class="flex-1 py-2 text-xs font-semibold text-stone-600 bg-stone-100 hover:bg-stone-200 rounded-xl">Cancel</button>
+        <button onclick="verifyAdminPin()" class="flex-1 py-2 text-xs font-semibold text-white bg-emerald-700 hover:bg-emerald-800 rounded-xl">Unlock</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Main Admin Dashboard Modal -->
+  <div id="adminDashboardModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-4xl w-full h-[90vh] flex flex-col overflow-hidden card-shadow">
+      
+      <!-- Admin Header -->
+      <div class="bg-emerald-950 text-white px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-lg bg-emerald-800 flex items-center justify-center text-amber-400">
+            <i class="fa-solid fa-sliders"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-base">Paavan Niramay Admin Panel</h3>
+            <p class="text-xs text-emerald-300">Live Content & LocalStorage Sync</p>
+          </div>
+        </div>
+        <button onclick="closeAdminDashboard()" class="text-emerald-300 hover:text-white text-lg">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Admin Tabs -->
+      <div class="flex border-b border-stone-200 bg-stone-50 px-6 gap-2 pt-3 text-xs font-semibold overflow-x-auto">
+        <button onclick="switchAdminTab('clinicInfoTab')" id="btnClinicInfoTab" class="py-2.5 px-4 border-b-2 border-emerald-700 text-emerald-800 flex items-center gap-1.5 whitespace-nowrap">
+          <i class="fa-solid fa-building"></i> Clinic Info & Phone
+        </button>
+        <button onclick="switchAdminTab('videosTab')" id="btnVideosTab" class="py-2.5 px-4 border-b-2 border-transparent text-stone-500 hover:text-emerald-700 flex items-center gap-1.5 whitespace-nowrap">
+          <i class="fa-solid fa-video"></i> Manage Videos
+        </button>
+        <button onclick="switchAdminTab('testimonialsTab')" id="btnTestimonialsTab" class="py-2.5 px-4 border-b-2 border-transparent text-stone-500 hover:text-emerald-700 flex items-center gap-1.5 whitespace-nowrap">
+          <i class="fa-solid fa-comments"></i> Testimonials
+        </button>
+        <button onclick="switchAdminTab('photosTab')" id="btnPhotosTab" class="py-2.5 px-4 border-b-2 border-transparent text-stone-500 hover:text-emerald-700 flex items-center gap-1.5 whitespace-nowrap">
+          <i class="fa-solid fa-image"></i> Gallery Photos
+        </button>
+      </div>
+
+      <!-- Tab Contents (Scrollable) -->
+      <div class="flex-1 overflow-y-auto p-6 space-y-6">
+        
+        <!-- Tab 1: Clinic Info -->
+        <div id="clinicInfoTab" class="space-y-5">
+          <div>
+            <h4 class="text-sm font-bold text-stone-900 mb-1">Edit Clinic Location, Contact & Timings</h4>
+            <p class="text-xs text-stone-500">Changes will be saved to your browser's local storage and appear instantly on the website.</p>
+          </div>
+
+          <form onsubmit="saveClinicInfo(event)" class="space-y-4">
+            <div>
+              <label class="block text-xs font-semibold text-stone-700 mb-1">Clinic Address (Panipat)</label>
+              <input type="text" id="adminAddressInput" required class="w-full px-3.5 py-2 text-xs rounded-xl border border-stone-300 focus:outline-none focus:border-emerald-600">
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-stone-700 mb-1">Primary Phone / WhatsApp</label>
+                <input type="text" id="adminPhoneInput" required class="w-full px-3.5 py-2 text-xs rounded-xl border border-stone-300 focus:outline-none focus:border-emerald-600">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-stone-700 mb-1">Clinic Hours / Timings</label>
+                <input type="text" id="adminHoursInput" required class="w-full px-3.5 py-2 text-xs rounded-xl border border-stone-300 focus:outline-none focus:border-emerald-600">
+              </div>
+            </div>
+
+            <div class="pt-2 flex gap-3">
+              <button type="submit" class="bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold px-5 py-2.5 rounded-xl transition">
+                Save Clinic Details
+              </button>
+              <button type="button" onclick="resetToDefaults()" class="text-xs text-rose-600 hover:underline">
+                Reset All To Initial Defaults
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Tab 2: Manage Videos -->
+        <div id="videosTab" class="hidden space-y-5">
+          <div class="flex justify-between items-center">
+            <div>
+              <h4 class="text-sm font-bold text-stone-900 mb-0.5">Manage Treatment & Clinical Videos</h4>
+              <p class="text-xs text-stone-500">Add YouTube video links or embed IDs.</p>
+            </div>
+            <button onclick="openAddVideoModal()" class="text-xs bg-emerald-700 text-white px-3 py-1.5 rounded-lg font-semibold hover:bg-emerald-800">
+              + New Video
+            </button>
+          </div>
+          <div id="adminVideoList" class="space-y-3"></div>
+        </div>
+
+        <!-- Tab 3: Testimonials -->
+        <div id="testimonialsTab" class="hidden space-y-5">
+          <div class="flex justify-between items-center">
+            <div>
+              <h4 class="text-sm font-bold text-stone-900 mb-0.5">Manage Patient Testimonials</h4>
+              <p class="text-xs text-stone-500">Edit or delete reviews and success stories.</p>
+            </div>
+            <button onclick="openAddTestimonialModal()" class="text-xs bg-emerald-700 text-white px-3 py-1.5 rounded-lg font-semibold hover:bg-emerald-800">
+              + New Testimonial
+            </button>
+          </div>
+          <div id="adminTestimonialList" class="space-y-3"></div>
+        </div>
+
+        <!-- Tab 4: Photos -->
+        <div id="photosTab" class="hidden space-y-5">
+          <div class="flex justify-between items-center">
+            <div>
+              <h4 class="text-sm font-bold text-stone-900 mb-0.5">Manage Gallery & Clinic Photos</h4>
+              <p class="text-xs text-stone-500">Add photo links or captions.</p>
+            </div>
+            <button onclick="openAddPhotoModal()" class="text-xs bg-emerald-700 text-white px-3 py-1.5 rounded-lg font-semibold hover:bg-emerald-800">
+              + New Photo
+            </button>
+          </div>
+          <div id="adminPhotoList" class="grid grid-cols-2 sm:grid-cols-3 gap-3"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Sub-Modal: Add Video -->
+  <div id="addVideoModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full p-6 card-shadow">
+      <h3 class="text-base font-bold text-stone-900 font-heading mb-4">Add Treatment Video</h3>
+      <form onsubmit="handleSaveVideo(event)" class="space-y-3">
+        <div>
+          <label class="block text-xs font-semibold text-stone-700 mb-1">Video Title *</label>
+          <input type="text" id="newVideoTitle" required placeholder="e.g. Acupuncture For Sciatica Relief" class="w-full px-3 py-2 text-xs rounded-xl border border-stone-300">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-stone-700 mb-1">Category</label>
+          <select id="newVideoCategory" class="w-full px-3 py-2 text-xs rounded-xl border border-stone-300">
+            <option>Acupuncture</option>
+            <option>Spine Decompression</option>
+            <option>Cupping & Hijama</option>
+            <option>Chiropractic</option>
+            <option>Physiotherapy</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-stone-700 mb-1">YouTube URL or Video ID *</label>
+          <input type="text" id="newVideoUrl" required placeholder="e.g. dQw4w9WgXcQ or full YouTube link" class="w-full px-3 py-2 text-xs rounded-xl border border-stone-300">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-stone-700 mb-1">Short Description</label>
+          <textarea id="newVideoDesc" rows="2" placeholder="Brief details about what is demonstrated..." class="w-full px-3 py-2 text-xs rounded-xl border border-stone-300"></textarea>
+        </div>
+        <div class="flex gap-2 pt-2">
+          <button type="button" onclick="closeAddVideoModal()" class="flex-1 py-2 text-xs bg-stone-100 hover:bg-stone-200 rounded-xl font-semibold">Cancel</button>
+          <button type="submit" class="flex-1 py-2 text-xs bg-emerald-700 hover:bg-emerald-800 text-white rounded-xl font-semibold">Save Video</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Sub-Modal: Add Testimonial -->
+  <div id="addTestimonialModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full p-6 card-shadow">
+      <h3 class="text-base font-bold text-stone-900 font-heading mb-4">Add Patient Testimonial</h3>
+      <form onsubmit="handleSaveTestimonial(event)" class="space-y-3">
+        <div>
+          <label class="block text-xs font-semibold text-stone-700 mb-1">Patient Name *</label>
+          <input type="text" id="newPatientName" required placeholder="e.g. Rajesh Sharma" class="w-full px-3 py-2 text-xs rounded-xl border border-stone-300">
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-stone-700 mb-1">Treated For *</label>
+            <input type="text" id="newPatientCondition" required placeholder="e.g. L5-S1 Slip Disc & Sciatica" class="w-full px-3 py-2 text-xs rounded-xl border border-stone-300">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-stone-700 mb-1">Rating</label>
+            <select id="newPatientRating" class="w-full px-3 py-2 text-xs rounded-xl border border-stone-300">
+              <option value="5">5 Star (★★★★★)</option>
+              <option value="4">4 Star (★★★★☆)</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-stone-700 mb-1">Review Text *</label>
+          <textarea id="newPatientComment" rows="3" required placeholder="Share how Dr. Pawan Goyal helped the patient..." class="w-full px-3 py-2 text-xs rounded-xl border border-stone-300"></textarea>
+        </div>
+        <div class="flex gap-2 pt-2">
+          <button type="button" onclick="closeAddTestimonialModal()" class="flex-1 py-2 text-xs bg-stone-100 hover:bg-stone-200 rounded-xl font-semibold">Cancel</button>
+          <button type="submit" class="flex-1 py-2 text-xs bg-emerald-700 hover:bg-emerald-800 text-white rounded-xl font-semibold">Save Review</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Sub-Modal: Add Photo -->
+  <div id="addPhotoModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full p-6 card-shadow">
+      <h3 class="text-base font-bold text-stone-900 font-heading mb-4">Add Clinic / Treatment Photo</h3>
+      <form onsubmit="handleSavePhoto(event)" class="space-y-3">
+        <div>
+          <label class="block text-xs font-semibold text-stone-700 mb-1">Photo Caption / Title *</label>
+          <input type="text" id="newPhotoTitle" required placeholder="e.g. Spine Decompression Therapy Room" class="w-full px-3 py-2 text-xs rounded-xl border border-stone-300">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-stone-700 mb-1">Image URL *</label>
+          <input type="url" id="newPhotoUrl" required placeholder="https://example.com/photo.jpg" class="w-full px-3 py-2 text-xs rounded-xl border border-stone-300">
+          <p class="text-[10px] text-stone-400 mt-1">Paste any direct image link from Unsplash, Google Drive (direct), or your cloud host.</p>
+        </div>
+        <div class="flex gap-2 pt-2">
+          <button type="button" onclick="closeAddPhotoModal()" class="flex-1 py-2 text-xs bg-stone-100 hover:bg-stone-200 rounded-xl font-semibold">Cancel</button>
+          <button type="submit" class="flex-1 py-2 text-xs bg-emerald-700 hover:bg-emerald-800 text-white rounded-xl font-semibold">Save Photo</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Booking Modal -->
+  <div id="bookingModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full p-6 card-shadow">
+      <div class="flex justify-between items-center mb-4">
+        <h3 class="text-lg font-bold text-stone-900 font-heading">Book Appointment</h3>
+        <button onclick="closeBookingModal()" class="text-stone-400 hover:text-stone-600"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <form onsubmit="handleAppointmentSubmit(event)" class="space-y-3">
+        <div>
+          <label class="block text-xs font-semibold text-stone-700 mb-1">Full Name</label>
+          <input type="text" required placeholder="Your Name" class="w-full px-3 py-2 text-xs rounded-xl border border-stone-300">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-stone-700 mb-1">Phone / WhatsApp</label>
+          <input type="tel" required placeholder="+91 98765 43210" class="w-full px-3 py-2 text-xs rounded-xl border border-stone-300">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-stone-700 mb-1">Main Concern</label>
+          <select class="w-full px-3 py-2 text-xs rounded-xl border border-stone-300">
+            <option>Severe Back Pain & Sciatica</option>
+            <option>Cervical & Neck Pain</option>
+            <option>Spine Decompression Machine</option>
+            <option>Acupuncture / Cupping / Hijama</option>
+            <option>Physiotherapy & Chiropractic</option>
+          </select>
+        </div>
+        <button type="submit" class="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-2.5 rounded-xl text-xs transition">
+          Confirm Booking
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Notification Toast -->
+  <div id="toast" class="fixed bottom-5 right-5 bg-emerald-900 text-white text-xs px-4 py-3 rounded-xl shadow-xl z-50 transform translate-y-20 opacity-0 transition duration-300 flex items-center gap-2">
+    <i class="fa-solid fa-circle-check text-amber-400"></i>
+    <span id="toastMsg">Saved successfully!</span>
+  </div>
+
+  <!-- ==================== JAVASCRIPT ==================== -->
+  <script>
+    // Initial Default Data (If not yet in localStorage)
+    const DEFAULT_DATA = {
+      clinic: {
+        address: "Model Town / GT Road, Panipat, Haryana",
+        phone: "+91 98765 43210",
+        hours: "Mon - Sat: 9:30 AM - 7:00 PM (By Appointment Only)",
+        city: "Panipat, Haryana"
+      },
+      videos: [
+        {
+          id: "1",
+          title: "Acupuncture Therapy for Chronic Sciatica & Disc Bulge",
+          category: "Acupuncture",
+          youtubeId: "dQw4w9WgXcQ",
+          desc: "Demonstration of distal acupuncture point stimulation to alleviate lower back sciatica pain."
+        },
+        {
+          id: "2",
+          title: "Computerized Spinal Decompression Machine in Action",
+          category: "Spine Decompression",
+          youtubeId: "dQw4w9WgXcQ",
+          desc: "How targeted negative-pressure spinal traction relieves nerve entrapment without surgery."
+        },
+        {
+          id: "3",
+          title: "Wet Cupping (Hijama) for Back Muscle Spasms & Detox",
+          category: "Cupping & Hijama",
+          youtubeId: "dQw4w9WgXcQ",
+          desc: "Sterile cupping technique to pull stagnant cellular toxins and restore healthy micro-circulation."
+        }
+      ],
+      testimonials: [
+        {
+          id: "1",
+          name: "Suresh Malik",
+          condition: "L4-L5 Disc Herniation & Severe Sciatica",
+          rating: 5,
+          comment: "I was advised spine surgery by multiple hospitals. After 15 sessions of spinal decompression and acupuncture with Dr. Pawan Goyal, my leg numbness is completely gone!"
+        },
+        {
+          id: "2",
+          name: "Sunita Verma",
+          condition: "Chronic Cervical Spondylosis",
+          rating: 5,
+          comment: "Daily severe neck stiffness and dizziness made working impossible. The combination of physiotherapy and acupuncture gave me instant, lasting relief."
+        },
+        {
+          id: "3",
+          name: "Amit Narang",
+          condition: "Frozen Shoulder & Muscle Knot",
+          rating: 5,
+          comment: "Dr. Goyal's cupping and chiropractic adjustments restored full range of motion to my right shoulder within 3 weeks. Highly recommended clinic in Panipat."
+        }
+      ],
+      photos: [
+        {
+          id: "1",
+          title: "Spinal Decompression Unit",
+          url: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=600&auto=format&fit=crop"
+        },
+        {
+          id: "2",
+          title: "Acupuncture Therapy Room",
+          url: "https://images.unsplash.com/photo-1512290900672-1a05260195a6?q=80&w=600&auto=format&fit=crop"
+        },
+        {
+          id: "3",
+          title: "Chiropractic & Physio Rehab Area",
+          url: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=600&auto=format&fit=crop"
+        },
+        {
+          id: "4",
+          title: "Hijama & Cupping Therapy Suite",
+          url: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=600&auto=format&fit=crop"
+        }
+      ]
+    };
+
+    // Helper functions for LocalStorage
+    function getStoredData() {
+      const data = localStorage.getItem('paavan_niramay_data');
+      if (!data) {
+        localStorage.setItem('paavan_niramay_data', JSON.stringify(DEFAULT_DATA));
+        return DEFAULT_DATA;
+      }
+      return JSON.parse(data);
+    }
+
+    function saveStoredData(data) {
+      localStorage.setItem('paavan_niramay_data', JSON.stringify(data));
+      renderAll();
+    }
+
+    // Toast function
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toastMsg');
+      toastMsg.innerText = message;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      setTimeout(() => {
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 3000);
+    }
+
+    // Render Website Contents from LocalStorage
+    function renderAll() {
+      const data = getStoredData();
+
+      // Render Clinic Details
+      document.getElementById('topAddressText').innerText = data.clinic.address;
+      document.getElementById('contactAddressText').innerText = data.clinic.address;
+      document.getElementById('footerAddressText').innerText = data.clinic.address;
+
+      document.getElementById('topPhoneText').innerText = data.clinic.phone;
+      document.getElementById('topPhoneLink').href = 'tel:' + data.clinic.phone.replace(/[^0-9+]/g, '');
+      document.getElementById('contactPhoneText').innerText = data.clinic.phone;
+      document.getElementById('contactPhoneLink').href = 'tel:' + data.clinic.phone.replace(/[^0-9+]/g, '');
+      document.getElementById('footerPhoneText').innerText = data.clinic.phone;
+
+      document.getElementById('topHoursText').innerText = data.clinic.hours;
+      document.getElementById('contactHoursText').innerText = data.clinic.hours;
+      document.getElementById('footerHoursText').innerText = data.clinic.hours;
+
+      // Populate Admin Form Fields
+      document.getElementById('adminAddressInput').value = data.clinic.address;
+      document.getElementById('adminPhoneInput').value = data.clinic.phone;
+      document.getElementById('adminHoursInput').value = data.clinic.hours;
+
+      // Render Videos
+      const videoContainer = document.getElementById('videoContainer');
+      const adminVideoList = document.getElementById('adminVideoList');
+      videoContainer.innerHTML = '';
+      adminVideoList.innerHTML = '';
+
+      data.videos.forEach(v => {
+        // Public card
+        const card = document.createElement('div');
+        card.className = "bg-stone-50 rounded-2xl overflow-hidden border border-stone-200 card-shadow flex flex-col";
+        card.innerHTML = `
+          <div class="relative aspect-video bg-black flex items-center justify-center">
+            <iframe class="w-full h-full" src="https://www.youtube.com/embed/${v.youtubeId}" title="${v.title}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded">${v.category}</span>
+              <h4 class="font-bold text-stone-900 text-sm mt-2 mb-1">${v.title}</h4>
+              <p class="text-xs text-stone-500 line-clamp-2">${v.desc || ''}</p>
+            </div>
+          </div>
+        `;
+        videoContainer.appendChild(card);
+
+        // Admin List Item
+        const adminItem = document.createElement('div');
+        adminItem.className = "p-3 bg-stone-50 border border-stone-200 rounded-xl flex items-center justify-between";
+        adminItem.innerHTML = `
+          <div>
+            <div class="font-bold text-xs text-stone-900">${v.title}</div>
+            <div class="text-[11px] text-stone-500">${v.category} &bull; ID: ${v.youtubeId}</div>
+          </div>
+          <button onclick="deleteVideo('${v.id}')" class="text-xs text-rose-600 hover:text-rose-800 font-semibold px-2 py-1">
+            <i class="fa-solid fa-trash mr-1"></i> Delete
+          </button>
+        `;
+        adminVideoList.appendChild(adminItem);
+      });
+
+      // Render Testimonials
+      const testimonialContainer = document.getElementById('testimonialContainer');
+      const adminTestimonialList = document.getElementById('adminTestimonialList');
+      testimonialContainer.innerHTML = '';
+      adminTestimonialList.innerHTML = '';
+
+      data.testimonials.forEach(t => {
+        const stars = '★'.repeat(t.rating) + '☆'.repeat(5 - t.rating);
+        
+        // Public card
+        const card = document.createElement('div');
+        card.className = "bg-white p-6 rounded-2xl border border-stone-200/90 card-shadow flex flex-col justify-between";
+        card.innerHTML = `
+          <div>
+            <div class="text-amber-400 text-sm mb-2">${stars}</div>
+            <p class="text-stone-600 text-xs sm:text-sm italic leading-relaxed mb-4">"${t.comment}"</p>
+          </div>
+          <div class="pt-3 border-t border-stone-100 flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xs">
+              ${t.name.charAt(0)}
+            </div>
+            <div>
+              <h5 class="font-bold text-xs text-stone-900">${t.name}</h5>
+              <span class="text-[10px] text-emerald-700 font-semibold">${t.condition}</span>
+            </div>
+          </div>
+        `;
+        testimonialContainer.appendChild(card);
+
+        // Admin List Item
+        const adminItem = document.createElement('div');
+        adminItem.className = "p-3 bg-stone-50 border border-stone-200 rounded-xl flex items-center justify-between";
+        adminItem.innerHTML = `
+          <div>
+            <div class="font-bold text-xs text-stone-900">${t.name} <span class="text-emerald-700 font-normal">(${t.condition})</span></div>
+            <div class="text-[11px] text-stone-500 italic">"${t.comment.substring(0, 60)}..."</div>
+          </div>
+          <button onclick="deleteTestimonial('${t.id}')" class="text-xs text-rose-600 hover:text-rose-800 font-semibold px-2 py-1">
+            <i class="fa-solid fa-trash mr-1"></i> Delete
+          </button>
+        `;
+        adminTestimonialList.appendChild(adminItem);
+      });
+
+      // Render Photos
+      const galleryContainer = document.getElementById('galleryContainer');
+      const adminPhotoList = document.getElementById('adminPhotoList');
+      galleryContainer.innerHTML = '';
+      adminPhotoList.innerHTML = '';
+
+      data.photos.forEach(p => {
+        // Public card
+        const card = document.createElement('div');
+        card.className = "relative group rounded-xl overflow-hidden aspect-square bg-stone-100 border border-stone-200";
+        card.innerHTML = `
+          <img src="${p.url}" alt="${p.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent opacity-0 group-hover:opacity-100 transition p-3 flex items-end">
+            <span class="text-white text-xs font-semibold">${p.title}</span>
+          </div>
+        `;
+        galleryContainer.appendChild(card);
+
+        // Admin Card
+        const adminCard = document.createElement('div');
+        adminCard.className = "relative rounded-lg overflow-hidden border border-stone-200 aspect-square group bg-stone-100";
+        adminCard.innerHTML = `
+          <img src="${p.url}" alt="${p.title}" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-black/60 p-2 flex flex-col justify-between">
+            <span class="text-white text-[10px] truncate">${p.title}</span>
+            <button onclick="deletePhoto('${p.id}')" class="text-[11px] bg-rose-600 text-white py-1 px-2 rounded font-semibold w-full hover:bg-rose-700">
+              <i class="fa-solid fa-trash"></i> Delete
+            </button>
+          </div>
+        `;
+        adminPhotoList.appendChild(adminCard);
+      });
+
+      document.getElementById('yearSpan').innerText = new Date().getFullYear();
+    }
+
+    // ================= Admin Modal & PIN logic =================
+    const ADMIN_PIN = "1234";
+
+    function openAdminModal() {
+      document.getElementById('adminPinModal').classList.remove('hidden');
+      document.getElementById('adminPinInput').value = '';
+      document.getElementById('adminPinInput').focus();
+    }
+
+    function closeAdminPinModal() {
+      document.getElementById('adminPinModal').classList.add('hidden');
+    }
+
+    function verifyAdminPin() {
+      const pin = document.getElementById('adminPinInput').value;
+      if (pin === ADMIN_PIN) {
+        closeAdminPinModal();
+        document.getElementById('adminDashboardModal').classList.remove('hidden');
+      } else {
+        alert('Incorrect PIN. Please use 1234.');
+      }
+    }
+
+    function closeAdminDashboard() {
+      document.getElementById('adminDashboardModal').classList.add('hidden');
+    }
+
+    function switchAdminTab(tabId) {
+      ['clinicInfoTab', 'videosTab', 'testimonialsTab', 'photosTab'].forEach(id => {
+        document.getElementById(id).classList.add('hidden');
+      });
+      document.getElementById(tabId).classList.remove('hidden');
+
+      const tabs = {
+        clinicInfoTab: 'btnClinicInfoTab',
+        videosTab: 'btnVideosTab',
+        testimonialsTab: 'btnTestimonialsTab',
+        photosTab: 'btnPhotosTab'
+      };
+
+      Object.values(tabs).forEach(btnId => {
+        const btn = document.getElementById(btnId);
+        btn.classList.remove('border-emerald-700', 'text-emerald-800');
+        btn.classList.add('border-transparent', 'text-stone-500');
+      });
+
+      const activeBtn = document.getElementById(tabs[tabId]);
+      activeBtn.classList.remove('border-transparent', 'text-stone-500');
+      activeBtn.classList.add('border-emerald-700', 'text-emerald-800');
+    }
+
+    // Save Clinic Info
+    function saveClinicInfo(e) {
+      e.preventDefault();
+      const data = getStoredData();
+      data.clinic.address = document.getElementById('adminAddressInput').value.trim();
+      data.clinic.phone = document.getElementById('adminPhoneInput').value.trim();
+      data.clinic.hours = document.getElementById('adminHoursInput').value.trim();
+      saveStoredData(data);
+      showToast("Clinic details updated!");
+    }
+
+    // Manage Videos
+    function openAddVideoModal() {
+      document.getElementById('addVideoModal').classList.remove('hidden');
+    }
+    function closeAddVideoModal() {
+      document.getElementById('addVideoModal').classList.add('hidden');
+    }
+    function handleSaveVideo(e) {
+      e.preventDefault();
+      let inputUrl = document.getElementById('newVideoUrl').value.trim();
+      let ytId = inputUrl;
+      if (inputUrl.includes('v=')) {
+        ytId = inputUrl.split('v=')[1].split('&')[0];
+      } else if (inputUrl.includes('youtu.be/')) {
+        ytId = inputUrl.split('youtu.be/')[1].split('?')[0];
+      }
+
+      const data = getStoredData();
+      data.videos.unshift({
+        id: Date.now().toString(),
+        title: document.getElementById('newVideoTitle').value.trim(),
+        category: document.getElementById('newVideoCategory').value,
+        youtubeId: ytId,
+        desc: document.getElementById('newVideoDesc').value.trim()
+      });
+      saveStoredData(data);
+      closeAddVideoModal();
+      showToast("New video published!");
+    }
+    function deleteVideo(id) {
+      if (confirm("Delete this video?")) {
+        const data = getStoredData();
+        data.videos = data.videos.filter(v => v.id !== id);
+        saveStoredData(data);
+        showToast("Video deleted.");
+      }
+    }
+
+    // Manage Testimonials
+    function openAddTestimonialModal() {
+      document.getElementById('addTestimonialModal').classList.remove('hidden');
+    }
+    function closeAddTestimonialModal() {
+      document.getElementById('addTestimonialModal').classList.add('hidden');
+    }
+    function handleSaveTestimonial(e) {
+      e.preventDefault();
+      const data = getStoredData();
+      data.testimonials.unshift({
+        id: Date.now().toString(),
+        name: document.getElementById('newPatientName').value.trim(),
+        condition: document.getElementById('newPatientCondition').value.trim(),
+        rating: parseInt(document.getElementById('newPatientRating').value),
+        comment: document.getElementById('newPatientComment').value.trim()
+      });
+      saveStoredData(data);
+      closeAddTestimonialModal();
+      showToast("Testimonial added!");
+    }
+    function deleteTestimonial(id) {
+      if (confirm("Delete this review?")) {
+        const data = getStoredData();
+        data.testimonials = data.testimonials.filter(t => t.id !== id);
+        saveStoredData(data);
+        showToast("Review deleted.");
+      }
+    }
+
+    // Manage Photos
+    function openAddPhotoModal() {
+      document.getElementById('addPhotoModal').classList.remove('hidden');
+    }
+    function closeAddPhotoModal() {
+      document.getElementById('addPhotoModal').classList.add('hidden');
+    }
+    function handleSavePhoto(e) {
+      e.preventDefault();
+      const data = getStoredData();
+      data.photos.unshift({
+        id: Date.now().toString(),
+        title: document.getElementById('newPhotoTitle').value.trim(),
+        url: document.getElementById('newPhotoUrl').value.trim()
+      });
+      saveStoredData(data);
+      closeAddPhotoModal();
+      showToast("Photo added to gallery!");
+    }
+    function deletePhoto(id) {
+      if (confirm("Delete this photo?")) {
+        const data = getStoredData();
+        data.photos = data.photos.filter(p => p.id !== id);
+        saveStoredData(data);
+        showToast("Photo deleted.");
+      }
+    }
+
+    // Reset Defaults
+    function resetToDefaults() {
+      if (confirm("Reset all clinic details, videos, reviews and photos back to default demo state?")) {
+        saveStoredData(DEFAULT_DATA);
+        showToast("Reset to defaults complete.");
+      }
+    }
+
+    // Appointment Booking UI
+    function openBookingModal() {
+      document.getElementById('bookingModal').classList.remove('hidden');
+    }
+    function closeBookingModal() {
+      document.getElementById('bookingModal').classList.add('hidden');
+    }
+    function handleAppointmentSubmit(e) {
+      e.preventDefault();
+      closeBookingModal();
+      showToast("Consultation request received! Dr. Goyal's team will call you shortly.");
+    }
+
+    // Initial load
+    window.addEventListener('DOMContentLoaded', () => {
+      renderAll();
+    });
+  </script>
+</body>
+</html>
