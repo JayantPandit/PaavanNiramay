@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paavan Niramay Wellness Kendra | Dr. Pawan Goyal, BPT</title>
+  <title>Paavan Nirmay Wellness Kendra | Dr. Pawan Goyal, BPT</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
@@ -19,12 +19,19 @@
   <!-- Top Announcement Bar -->
   <div class="bg-emerald-950 text-emerald-200 text-xs py-2 px-4 border-b border-emerald-800">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-      <div class="flex items-center gap-4">
+      <div class="flex items-center gap-4 flex-wrap">
         <span><i class="fa-solid fa-location-dot text-amber-400 mr-1.5"></i> <span id="topAddressText">Model Town / GT Road, Panipat, Haryana</span></span>
         <span class="hidden md:inline text-emerald-700">|</span>
         <span class="hidden md:inline"><i class="fa-solid fa-clock text-amber-400 mr-1.5"></i> <span id="topHoursText">Mon - Sat: 9:30 AM - 7:00 PM (By Appointment)</span></span>
       </div>
       <div class="flex items-center gap-4">
+        <div class="flex items-center gap-2.5 text-stone-300">
+          <a id="topSocialWhatsApp" href="#" target="_blank" class="hover:text-emerald-400 transition" title="WhatsApp"><i class="fa-brands fa-whatsapp text-sm"></i></a>
+          <a id="topSocialYouTube" href="#" target="_blank" class="hover:text-red-400 transition" title="YouTube"><i class="fa-brands fa-youtube text-sm"></i></a>
+          <a id="topSocialInstagram" href="#" target="_blank" class="hover:text-pink-400 transition" title="Instagram"><i class="fa-brands fa-instagram text-sm"></i></a>
+          <a id="topSocialFacebook" href="#" target="_blank" class="hover:text-blue-400 transition" title="Facebook"><i class="fa-brands fa-facebook text-sm"></i></a>
+        </div>
+        <span class="text-emerald-800">|</span>
         <a href="tel:+919876543210" id="topPhoneLink" class="hover:text-white transition flex items-center gap-1.5 font-medium">
           <i class="fa-solid fa-phone text-emerald-400"></i> <span id="topPhoneText">+91 98765 43210</span>
         </a>
@@ -43,7 +50,7 @@
           <i class="fa-solid fa-spa"></i>
         </div>
         <div>
-          <span class="block text-xl font-bold tracking-tight text-emerald-950 font-heading">Paavan Niramay</span>
+          <span class="block text-xl font-bold tracking-tight text-emerald-950 font-heading">Paavan Nirmay</span>
           <span class="block text-xs uppercase tracking-widest text-emerald-700 font-semibold">Wellness Kendra & Spine Care</span>
         </div>
       </a>
@@ -55,7 +62,7 @@
         <a href="#videos" class="hover:text-emerald-700 transition">Videos</a>
         <a href="#testimonials" class="hover:text-emerald-700 transition">Testimonials</a>
         <a href="#gallery" class="hover:text-emerald-700 transition">Photos</a>
-        <a href="#contact" class="hover:text-emerald-700 transition">Contact</a>
+        <a href="#contact" class="hover:text-emerald-700 transition">Contact & Map</a>
       </nav>
 
       <div class="flex items-center gap-3">
@@ -91,12 +98,12 @@
               <span>Consult Dr. Pawan Goyal</span>
               <i class="fa-solid fa-arrow-right"></i>
             </button>
-            <a href="#services" class="bg-emerald-800/80 hover:bg-emerald-800 text-emerald-100 border border-emerald-600/40 px-6 py-3.5 rounded-xl font-medium text-sm transition">
-              Explore Our Therapies
+            <a id="heroMapBtn" href="#" target="_blank" class="bg-emerald-800/80 hover:bg-emerald-800 text-emerald-100 border border-emerald-600/40 px-6 py-3.5 rounded-xl font-medium text-sm transition flex items-center gap-2">
+              <i class="fa-solid fa-map-location-dot text-amber-400"></i>
+              <span>View On Google Map</span>
             </a>
           </div>
 
-          <!-- Feature badges -->
           <div class="pt-6 grid grid-cols-3 gap-4 border-t border-emerald-700/60 text-emerald-200 text-xs sm:text-sm">
             <div>
               <p class="text-white text-xl font-bold">100%</p>
@@ -117,9 +124,10 @@
           <div class="relative w-full max-w-md">
             <div class="absolute -inset-2 bg-gradient-to-r from-amber-400 to-emerald-400 rounded-3xl blur-xl opacity-30"></div>
             <div class="relative bg-emerald-900/90 border border-emerald-600/40 rounded-3xl p-6 text-stone-100 card-shadow">
-              <div class="relative h-64 rounded-2xl overflow-hidden mb-5 bg-emerald-950 flex items-center justify-center">
-                <img id="doctorHeroPhoto" src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=800&auto=format&fit=crop" alt="Dr. Pawan Goyal, BPT" class="w-full h-full object-cover object-top">
-                <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/80 via-transparent"></div>
+              
+              <div class="relative h-80 rounded-2xl overflow-hidden mb-5 bg-emerald-950 flex items-center justify-center border-2 border-emerald-500/30">
+                <img id="doctorHeroPhoto" src="images/mainpageindividual.jpeg" alt="Dr. Pawan Goyal, BPT" class="w-full h-full object-cover object-top">
+                <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/85 via-transparent to-transparent"></div>
                 <div class="absolute bottom-3 left-4 right-4">
                   <span class="bg-amber-400 text-stone-900 text-[11px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Chief Practitioner</span>
                   <h3 class="text-xl font-bold text-white mt-1">Dr. Pawan Goyal</h3>
@@ -160,8 +168,8 @@
       <div class="grid md:grid-cols-12 gap-10 items-center">
         <div class="md:col-span-5 text-center">
           <div class="inline-block relative">
-            <div class="w-64 h-64 sm:w-72 sm:h-72 rounded-2xl overflow-hidden mx-auto border-4 border-emerald-100 shadow-xl bg-stone-100">
-              <img id="doctorAboutPhoto" src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=800&auto=format&fit=crop" alt="Dr. Pawan Goyal, BPT" class="w-full h-full object-cover">
+            <div class="w-64 h-72 sm:w-72 sm:h-80 rounded-2xl overflow-hidden mx-auto border-4 border-emerald-100 shadow-xl bg-stone-100">
+              <img id="doctorAboutPhoto" src="images/mainpageindividual.jpeg" alt="Dr. Pawan Goyal, BPT" class="w-full h-full object-cover object-top">
             </div>
             <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-emerald-900 text-white px-5 py-1.5 rounded-full text-xs font-semibold shadow-lg whitespace-nowrap">
               Dr. Pawan Goyal, BPT
@@ -172,7 +180,7 @@
           <span class="text-xs uppercase font-bold tracking-widest text-emerald-700">Practitioner Profile</span>
           <h2 class="text-3xl font-bold text-stone-900 font-heading">Focused On Restoring Natural Movement & Relieving Pain</h2>
           <p class="text-stone-600 text-sm sm:text-base leading-relaxed">
-            At <strong>Paavan Niramay Wellness Kendra</strong>, <strong>Dr. Pawan Goyal, BPT</strong> brings a pure, patient-centric approach to chronic neuromuscular and spinal conditions. With his foundation in physiotherapy (BPT) combined with years of practical expertise in clinical acupuncture and spine traction, he creates custom plans tailored to each individual.
+            At <strong>Paavan Nirmay Wellness Kendra</strong>, <strong>Dr. Pawan Goyal, BPT</strong> brings a pure, patient-centric approach to chronic neuromuscular and spinal conditions. With his foundation in physiotherapy (BPT) combined with practical expertise in clinical acupuncture and spine traction, he creates custom plans tailored to each individual.
           </p>
           <p class="text-stone-600 text-sm leading-relaxed">
             Patients suffering from severe disc prolapse, sciatica, stiff neck, chronic backaches, and joint degeneration find lasting recovery without relying on heavy painkillers or risky surgeries.
@@ -204,7 +212,6 @@
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         
-        <!-- Acupuncture -->
         <div class="bg-white p-7 rounded-2xl border border-stone-200/80 card-shadow hover:-translate-y-1 transition duration-200">
           <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center text-xl mb-5">
             <i class="fa-solid fa-feather-pointed"></i>
@@ -218,7 +225,6 @@
           </div>
         </div>
 
-        <!-- Acupressure -->
         <div class="bg-white p-7 rounded-2xl border border-stone-200/80 card-shadow hover:-translate-y-1 transition duration-200">
           <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center text-xl mb-5">
             <i class="fa-solid fa-hand-holding-medical"></i>
@@ -232,7 +238,6 @@
           </div>
         </div>
 
-        <!-- Cupping Therapy -->
         <div class="bg-white p-7 rounded-2xl border border-stone-200/80 card-shadow hover:-translate-y-1 transition duration-200">
           <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center text-xl mb-5">
             <i class="fa-solid fa-circle-nodes"></i>
@@ -246,7 +251,6 @@
           </div>
         </div>
 
-        <!-- Hijama Therapy -->
         <div class="bg-white p-7 rounded-2xl border border-stone-200/80 card-shadow hover:-translate-y-1 transition duration-200">
           <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center text-xl mb-5">
             <i class="fa-solid fa-shield-heart"></i>
@@ -260,9 +264,8 @@
           </div>
         </div>
 
-        <!-- Chiropractic Care -->
         <div class="bg-white p-7 rounded-2xl border border-stone-200/80 card-shadow hover:-translate-y-1 transition duration-200">
-          <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center text-xl mb-5">
+          <div class="w-12 h-12 rounded-xl bg-emerald-700 text-emerald-800 flex items-center justify-center text-xl mb-5">
             <i class="fa-solid fa-bone"></i>
           </div>
           <h3 class="text-xl font-bold text-stone-900 mb-2 font-heading">Chiropractic Adjustment</h3>
@@ -274,7 +277,6 @@
           </div>
         </div>
 
-        <!-- Physiotherapy -->
         <div class="bg-white p-7 rounded-2xl border border-stone-200/80 card-shadow hover:-translate-y-1 transition duration-200">
           <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center text-xl mb-5">
             <i class="fa-solid fa-person-walking"></i>
@@ -300,14 +302,14 @@
           <span class="text-xs uppercase font-bold tracking-widest text-amber-400">Featured Technology</span>
           <h2 class="text-3xl sm:text-4xl font-bold font-heading">Computerized Spinal Decompression Machine</h2>
           <p class="text-stone-300 text-sm sm:text-base leading-relaxed">
-            Our clinic is equipped with advanced motorized spinal decompression therapy machines. Unlike ordinary traction, this technology delivers precise, logarithmic distraction force to target specific collapsed disc segments (L4-L5, L5-S1, or Cervical discs).
+            Our clinic is equipped with advanced motorized spinal decompression therapy machines. This technology delivers precise distraction force to target specific collapsed disc segments (L4-L5, L5-S1, or Cervical discs).
           </p>
 
           <div class="space-y-4 pt-2">
             <div class="flex items-start gap-4">
               <div class="w-9 h-9 rounded-lg bg-emerald-800 text-amber-400 flex items-center justify-center shrink-0 text-sm font-bold">1</div>
               <div>
-                <h4 class="font-bold text-sm text-white">Negative Intra-Discal Pressure (Vacuum Effect)</h4>
+                <h4 class="font-bold text-sm text-white">Negative Intra-Discal Pressure</h4>
                 <p class="text-xs text-stone-400 mt-0.5">Pulls protruding, bulged disc material back into place away from the spinal nerve root.</p>
               </div>
             </div>
@@ -373,7 +375,7 @@
         </button>
       </div>
 
-      <!-- Video Grid (Populated dynamically) -->
+      <!-- Video Grid (Supports both Local MP4 and YouTube) -->
       <div id="videoContainer" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
     </div>
   </section>
@@ -392,7 +394,6 @@
         </button>
       </div>
 
-      <!-- Testimonials Grid (Dynamic) -->
       <div id="testimonialContainer" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
     </div>
   </section>
@@ -411,41 +412,46 @@
         </button>
       </div>
 
-      <!-- Photos Grid (Dynamic) -->
+      <!-- Photos Grid -->
       <div id="galleryContainer" class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"></div>
     </div>
   </section>
 
-  <!-- Contact & Location Section -->
+  <!-- Contact & Location Map Section -->
   <section id="contact" class="py-20 bg-stone-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-12 gap-10">
-        
-        <div class="lg:col-span-5 space-y-6">
-          <span class="text-xs uppercase font-bold tracking-widest text-emerald-700">Reach Us</span>
-          <h2 class="text-3xl font-bold text-stone-900 font-heading">Visit Our Wellness Center</h2>
-          <p class="text-stone-600 text-sm leading-relaxed">
-            Have questions or need to book an in-person assessment with <strong>Dr. Pawan Goyal, BPT</strong>? Get in touch with us using the details below.
-          </p>
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs uppercase font-bold tracking-widest text-emerald-700">Reach Out & Visit</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-stone-900 font-heading mt-1">Contact & Clinic Location</h2>
+        <p class="text-stone-600 text-sm mt-2">Visit Dr. Pawan Goyal at Paavan Nirmay Wellness Kendra or get in touch via phone and social media.</p>
+      </div>
 
-          <div class="space-y-4">
-            <div class="flex items-start gap-4 p-4 rounded-xl bg-white border border-stone-200">
+      <div class="grid lg:grid-cols-12 gap-8 mb-12">
+        
+        <div class="lg:col-span-5 space-y-5">
+          <div class="bg-white p-6 rounded-2xl border border-stone-200 card-shadow space-y-4">
+            
+            <div class="flex items-start gap-4">
               <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
                 <i class="fa-solid fa-location-dot"></i>
               </div>
-              <div>
+              <div class="flex-1">
                 <h4 class="font-bold text-stone-900 text-sm">Clinic Address</h4>
-                <p id="contactAddressText" class="text-xs text-stone-600 mt-1">Model Town / GT Road, Panipat, Haryana</p>
+                <p id="contactAddressText" class="text-xs text-stone-600 mt-0.5 leading-relaxed">Model Town / GT Road, Panipat, Haryana</p>
+                <a id="btnDirectionsMap" href="#" target="_blank" class="inline-flex items-center gap-1.5 text-xs text-emerald-700 hover:text-emerald-800 font-bold mt-2 hover:underline">
+                  <i class="fa-solid fa-diamond-turn-right"></i> Get Driving Directions on Google Maps
+                </a>
               </div>
             </div>
 
-            <div class="flex items-start gap-4 p-4 rounded-xl bg-white border border-stone-200">
+            <div class="border-t border-stone-100 pt-3 flex items-start gap-4">
               <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
                 <i class="fa-solid fa-phone"></i>
               </div>
               <div>
                 <h4 class="font-bold text-stone-900 text-sm">Direct Phone</h4>
-                <p class="text-xs text-stone-600 mt-1">
+                <p class="text-xs text-stone-600 mt-0.5">
                   <a href="tel:+919876543210" id="contactPhoneLink" class="text-emerald-700 font-semibold hover:underline">
                     <span id="contactPhoneText">+91 98765 43210</span>
                   </a>
@@ -453,66 +459,104 @@
               </div>
             </div>
 
-            <div class="flex items-start gap-4 p-4 rounded-xl bg-white border border-stone-200">
+            <div class="border-t border-stone-100 pt-3 flex items-start gap-4">
               <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
                 <i class="fa-solid fa-clock"></i>
               </div>
               <div>
                 <h4 class="font-bold text-stone-900 text-sm">Working Timings</h4>
-                <p id="contactHoursText" class="text-xs text-stone-600 mt-1">Mon - Sat: 9:30 AM - 7:00 PM (Prior Appointment Recommended)</p>
+                <p id="contactHoursText" class="text-xs text-stone-600 mt-0.5">Mon - Sat: 9:30 AM - 7:00 PM (Prior Appointment Recommended)</p>
               </div>
             </div>
+
+            <div class="border-t border-stone-100 pt-4">
+              <h5 class="text-xs font-bold text-stone-900 mb-2.5">Connect On Social Apps:</h5>
+              <div class="flex items-center gap-3">
+                <a id="socialBtnWhatsApp" href="#" target="_blank" class="w-9 h-9 rounded-xl bg-emerald-50 text-emerald-600 hover:bg-emerald-600 hover:text-white border border-emerald-200 transition flex items-center justify-center text-base" title="Chat on WhatsApp">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a id="socialBtnYouTube" href="#" target="_blank" class="w-9 h-9 rounded-xl bg-red-50 text-red-600 hover:bg-red-600 hover:text-white border border-red-200 transition flex items-center justify-center text-base" title="Watch on YouTube">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a id="socialBtnInstagram" href="#" target="_blank" class="w-9 h-9 rounded-xl bg-pink-50 text-pink-600 hover:bg-pink-600 hover:text-white border border-pink-200 transition flex items-center justify-center text-base" title="Follow on Instagram">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a id="socialBtnFacebook" href="#" target="_blank" class="w-9 h-9 rounded-xl bg-blue-50 text-blue-600 hover:bg-blue-600 hover:text-white border border-blue-200 transition flex items-center justify-center text-base" title="Follow on Facebook">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a id="socialBtnGoogleMap" href="#" target="_blank" class="w-9 h-9 rounded-xl bg-amber-50 text-amber-700 hover:bg-amber-600 hover:text-white border border-amber-200 transition flex items-center justify-center text-base" title="Google Maps Listing">
+                  <i class="fa-solid fa-map-pin"></i>
+                </a>
+              </div>
+            </div>
+
           </div>
         </div>
 
         <div class="lg:col-span-7">
-          <div class="bg-white rounded-2xl p-8 border border-stone-200 card-shadow">
-            <h3 class="text-2xl font-bold text-stone-900 font-heading mb-2">Request A Consultation</h3>
-            <p class="text-stone-500 text-xs mb-6">Leave your details and Dr. Goyal's clinical team will confirm your time slot.</p>
-
-            <form onsubmit="handleAppointmentSubmit(event)" class="space-y-4">
-              <div class="grid sm:grid-cols-2 gap-4">
-                <div>
-                  <label class="block text-xs font-semibold text-stone-700 mb-1">Your Full Name *</label>
-                  <input type="text" required placeholder="e.g. Ramesh Kumar" class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-stone-300 focus:outline-none focus:border-emerald-600">
-                </div>
-                <div>
-                  <label class="block text-xs font-semibold text-stone-700 mb-1">Mobile / WhatsApp Number *</label>
-                  <input type="tel" required placeholder="e.g. +91 98765 43210" class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-stone-300 focus:outline-none focus:border-emerald-600">
-                </div>
-              </div>
-
-              <div class="grid sm:grid-cols-2 gap-4">
-                <div>
-                  <label class="block text-xs font-semibold text-stone-700 mb-1">Preferred Therapy</label>
-                  <select class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-stone-300 focus:outline-none focus:border-emerald-600">
-                    <option>General Pain Assessment</option>
-                    <option>Acupuncture Session</option>
-                    <option>Spine Decompression Machine</option>
-                    <option>Cupping / Hijama Therapy</option>
-                    <option>Chiropractic Adjustment</option>
-                    <option>Physiotherapy Rehab</option>
-                  </select>
-                </div>
-                <div>
-                  <label class="block text-xs font-semibold text-stone-700 mb-1">Preferred Date</label>
-                  <input type="date" class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-stone-300 focus:outline-none focus:border-emerald-600">
-                </div>
-              </div>
-
-              <div>
-                <label class="block text-xs font-semibold text-stone-700 mb-1">Symptoms / Issue Description</label>
-                <textarea rows="3" placeholder="Briefly describe your pain (e.g. Sciatica in right leg, L4-L5 slip disc, cervical neck stiffness)..." class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-stone-300 focus:outline-none focus:border-emerald-600"></textarea>
-              </div>
-
-              <button type="submit" class="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-3.5 rounded-xl transition text-sm shadow-md">
-                Confirm Appointment Request
-              </button>
-            </form>
+          <div class="bg-white rounded-2xl overflow-hidden border border-stone-200 card-shadow h-[380px] flex flex-col">
+            <div class="bg-stone-50 px-4 py-2.5 border-b border-stone-200 flex items-center justify-between text-xs">
+              <span class="font-bold text-stone-800 flex items-center gap-1.5">
+                <i class="fa-solid fa-map text-emerald-700"></i> Clinic Location Map
+              </span>
+              <a id="mapExternalLink" href="#" target="_blank" class="text-emerald-700 hover:underline font-semibold flex items-center gap-1">
+                <span>Open Full Map</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+              </a>
+            </div>
+            <div class="flex-1 w-full relative bg-stone-100">
+              <iframe id="googleMapIframe" class="w-full h-full border-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111243.51817454378!2d76.90675713444458!3d29.39094645229156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ddb0ef9898031%3A0x6a053c847ca48a3c!2sPanipat%2C%20Haryana!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
           </div>
         </div>
 
       </div>
+
+      <div class="bg-white rounded-2xl p-8 border border-stone-200 card-shadow max-w-4xl mx-auto">
+        <h3 class="text-2xl font-bold text-stone-900 font-heading mb-2 text-center">Schedule Your In-Person Evaluation</h3>
+        <p class="text-stone-500 text-xs mb-6 text-center">Leave your details below and Dr. Goyal's clinical team will confirm your time slot.</p>
+
+        <form onsubmit="handleAppointmentSubmit(event)" class="space-y-4">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-stone-700 mb-1">Your Full Name *</label>
+              <input type="text" required placeholder="e.g. Ramesh Kumar" class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-stone-300 focus:outline-none focus:border-emerald-600">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-stone-700 mb-1">Mobile / WhatsApp Number *</label>
+              <input type="tel" required placeholder="e.g. +91 98765 43210" class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-stone-300 focus:outline-none focus:border-emerald-600">
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-stone-700 mb-1">Preferred Therapy</label>
+              <select class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-stone-300 focus:outline-none focus:border-emerald-600">
+                <option>General Spine & Pain Assessment</option>
+                <option>Acupuncture Session</option>
+                <option>Spine Decompression Machine</option>
+                <option>Cupping / Hijama Therapy</option>
+                <option>Chiropractic Adjustment</option>
+                <option>Physiotherapy Rehab</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-stone-700 mb-1">Preferred Date</label>
+              <input type="date" class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-stone-300 focus:outline-none focus:border-emerald-600">
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-stone-700 mb-1">Symptoms / Issue Description</label>
+            <textarea rows="3" placeholder="Briefly describe your pain (e.g. Sciatica in right leg, L4-L5 slip disc, cervical neck stiffness)..." class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-stone-300 focus:outline-none focus:border-emerald-600"></textarea>
+          </div>
+
+          <button type="submit" class="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-3.5 rounded-xl transition text-sm shadow-md">
+            Confirm Appointment Request
+          </button>
+        </form>
+      </div>
+
     </div>
   </section>
 
@@ -521,11 +565,17 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8 text-xs">
         <div>
-          <span class="block text-lg font-bold text-white font-heading mb-2">Paavan Niramay</span>
+          <span class="block text-lg font-bold text-white font-heading mb-2">Paavan Nirmay</span>
           <p class="text-emerald-400/80 leading-relaxed mb-3">
             Wellness Kendra & Advanced Non-Surgical Spine Care Clinic in Panipat. Led by Dr. Pawan Goyal, BPT.
           </p>
-          <span class="text-stone-400">Pure, drugless healing & spine restoration.</span>
+          <div class="flex items-center gap-3 pt-2 text-emerald-300">
+            <a id="footerSocialWhatsApp" href="#" target="_blank" class="hover:text-emerald-400 text-sm transition"><i class="fa-brands fa-whatsapp"></i></a>
+            <a id="footerSocialYouTube" href="#" target="_blank" class="hover:text-red-400 text-sm transition"><i class="fa-brands fa-youtube"></i></a>
+            <a id="footerSocialInstagram" href="#" target="_blank" class="hover:text-pink-400 text-sm transition"><i class="fa-brands fa-instagram"></i></a>
+            <a id="footerSocialFacebook" href="#" target="_blank" class="hover:text-blue-400 text-sm transition"><i class="fa-brands fa-facebook-f"></i></a>
+            <a id="footerSocialMap" href="#" target="_blank" class="hover:text-amber-400 text-sm transition"><i class="fa-solid fa-map-location-dot"></i></a>
+          </div>
         </div>
         <div>
           <h4 class="text-white font-bold mb-3 uppercase tracking-wider text-[11px]">Core Services</h4>
@@ -546,7 +596,7 @@
         <div>
           <h4 class="text-white font-bold mb-3 uppercase tracking-wider text-[11px]">Admin Management</h4>
           <p class="text-emerald-300/80 mb-3 leading-relaxed">
-            Need to update address, phone number, add patient videos, or new clinic photos?
+            Need to update address, maps, phone, social apps, add videos, or clinic photos?
           </p>
           <button onclick="openAdminModal()" class="bg-emerald-800 hover:bg-emerald-700 text-white px-3 py-1.5 rounded-lg text-xs font-medium border border-emerald-600 transition flex items-center gap-1.5">
             <i class="fa-solid fa-gear"></i> Open Admin Panel
@@ -554,7 +604,7 @@
         </div>
       </div>
       <div class="pt-8 border-t border-emerald-900/60 text-center text-xs text-emerald-500">
-        &copy; <span id="yearSpan"></span> Paavan Niramay Wellness Kendra. All rights reserved. Dr. Pawan Goyal, BPT.
+        &copy; <span id="yearSpan"></span> Paavan Nirmay Wellness Kendra. All rights reserved. Dr. Pawan Goyal, BPT.
       </div>
     </div>
   </footer>
@@ -568,9 +618,9 @@
         <i class="fa-solid fa-lock"></i>
       </div>
       <h3 class="text-lg font-bold text-stone-900 font-heading">Admin Authentication</h3>
-      <p class="text-xs text-stone-500 mt-1 mb-4">Enter Admin PIN to manage clinic details, videos, reviews and photos. (Default: <strong>1234</strong>)</p>
+      <p class="text-xs text-stone-500 mt-1 mb-4">Enter Admin PIN to manage clinic details, map, social media, videos, reviews and photos.</p>
       
-      <input type="password" id="adminPinInput" placeholder="Enter 4-digit PIN" maxlength="6" class="w-full text-center tracking-widest text-xl font-bold py-2 border border-stone-300 rounded-xl mb-4 focus:outline-none focus:border-emerald-600">
+      <input type="password" id="adminPinInput" placeholder="Enter PIN" maxlength="6" class="w-full text-center tracking-widest text-xl font-bold py-2 border border-stone-300 rounded-xl mb-4 focus:outline-none focus:border-emerald-600">
       
       <div class="flex gap-2">
         <button onclick="closeAdminPinModal()" class="flex-1 py-2 text-xs font-semibold text-stone-600 bg-stone-100 hover:bg-stone-200 rounded-xl">Cancel</button>
@@ -590,7 +640,7 @@
             <i class="fa-solid fa-sliders"></i>
           </div>
           <div>
-            <h3 class="font-bold text-base">Paavan Niramay Admin Panel</h3>
+            <h3 class="font-bold text-base">Paavan Nirmay Admin Panel</h3>
             <p class="text-xs text-emerald-300">Live Content & LocalStorage Sync</p>
           </div>
         </div>
@@ -602,7 +652,10 @@
       <!-- Admin Tabs -->
       <div class="flex border-b border-stone-200 bg-stone-50 px-6 gap-2 pt-3 text-xs font-semibold overflow-x-auto">
         <button onclick="switchAdminTab('clinicInfoTab')" id="btnClinicInfoTab" class="py-2.5 px-4 border-b-2 border-emerald-700 text-emerald-800 flex items-center gap-1.5 whitespace-nowrap">
-          <i class="fa-solid fa-building"></i> Clinic Info & Phone
+          <i class="fa-solid fa-building"></i> Clinic Info & Map
+        </button>
+        <button onclick="switchAdminTab('socialMediaTab')" id="btnSocialMediaTab" class="py-2.5 px-4 border-b-2 border-transparent text-stone-500 hover:text-emerald-700 flex items-center gap-1.5 whitespace-nowrap">
+          <i class="fa-solid fa-share-nodes"></i> Social Media Links
         </button>
         <button onclick="switchAdminTab('videosTab')" id="btnVideosTab" class="py-2.5 px-4 border-b-2 border-transparent text-stone-500 hover:text-emerald-700 flex items-center gap-1.5 whitespace-nowrap">
           <i class="fa-solid fa-video"></i> Manage Videos
@@ -615,13 +668,13 @@
         </button>
       </div>
 
-      <!-- Tab Contents (Scrollable) -->
+      <!-- Tab Contents -->
       <div class="flex-1 overflow-y-auto p-6 space-y-6">
         
-        <!-- Tab 1: Clinic Info -->
+        <!-- Tab 1: Clinic Info & Map -->
         <div id="clinicInfoTab" class="space-y-5">
           <div>
-            <h4 class="text-sm font-bold text-stone-900 mb-1">Edit Clinic Location, Contact & Timings</h4>
+            <h4 class="text-sm font-bold text-stone-900 mb-1">Edit Clinic Location, Contact & Map</h4>
             <p class="text-xs text-stone-500">Changes will be saved to your browser's local storage and appear instantly on the website.</p>
           </div>
 
@@ -633,7 +686,7 @@
 
             <div class="grid sm:grid-cols-2 gap-4">
               <div>
-                <label class="block text-xs font-semibold text-stone-700 mb-1">Primary Phone / WhatsApp</label>
+                <label class="block text-xs font-semibold text-stone-700 mb-1">Primary Phone Number</label>
                 <input type="text" id="adminPhoneInput" required class="w-full px-3.5 py-2 text-xs rounded-xl border border-stone-300 focus:outline-none focus:border-emerald-600">
               </div>
               <div>
@@ -642,9 +695,14 @@
               </div>
             </div>
 
+            <div>
+              <label class="block text-xs font-semibold text-stone-700 mb-1">Google Maps Direct Link (For Directions Button)</label>
+              <input type="url" id="adminMapLinkInput" required placeholder="https://maps.google.com/?q=..." class="w-full px-3.5 py-2 text-xs rounded-xl border border-stone-300 focus:outline-none focus:border-emerald-600">
+            </div>
+
             <div class="pt-2 flex gap-3">
               <button type="submit" class="bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold px-5 py-2.5 rounded-xl transition">
-                Save Clinic Details
+                Save Clinic & Map Details
               </button>
               <button type="button" onclick="resetToDefaults()" class="text-xs text-rose-600 hover:underline">
                 Reset All To Initial Defaults
@@ -653,12 +711,45 @@
           </form>
         </div>
 
-        <!-- Tab 2: Manage Videos -->
+        <!-- Tab 2: Social Media Links -->
+        <div id="socialMediaTab" class="hidden space-y-5">
+          <div>
+            <h4 class="text-sm font-bold text-stone-900 mb-1">Social Media & Messaging Apps</h4>
+            <p class="text-xs text-stone-500">Provide direct links to your channels and pages so visitors can easily view your content.</p>
+          </div>
+
+          <form onsubmit="saveSocialLinks(event)" class="space-y-4">
+            <div>
+              <label class="block text-xs font-semibold text-stone-700 mb-1">WhatsApp Number or Chat Link</label>
+              <input type="text" id="adminSocialWhatsApp" placeholder="e.g. https://wa.me/919876543210" class="w-full px-3.5 py-2 text-xs rounded-xl border border-stone-300 focus:outline-none focus:border-emerald-600">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-stone-700 mb-1">YouTube Channel URL</label>
+              <input type="url" id="adminSocialYouTube" placeholder="e.g. https://youtube.com/@paavannirmay" class="w-full px-3.5 py-2 text-xs rounded-xl border border-stone-300 focus:outline-none focus:border-emerald-600">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-stone-700 mb-1">Instagram Profile URL</label>
+              <input type="url" id="adminSocialInstagram" placeholder="e.g. https://instagram.com/dr_pawan_goyal" class="w-full px-3.5 py-2 text-xs rounded-xl border border-stone-300 focus:outline-none focus:border-emerald-600">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-stone-700 mb-1">Facebook Page URL</label>
+              <input type="url" id="adminSocialFacebook" placeholder="e.g. https://facebook.com/paavannirmay" class="w-full px-3.5 py-2 text-xs rounded-xl border border-stone-300 focus:outline-none focus:border-emerald-600">
+            </div>
+
+            <div class="pt-2">
+              <button type="submit" class="bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold px-5 py-2.5 rounded-xl transition">
+                Save Social Media Links
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Tab 3: Manage Videos (Supports Local MP4 or YouTube) -->
         <div id="videosTab" class="hidden space-y-5">
           <div class="flex justify-between items-center">
             <div>
               <h4 class="text-sm font-bold text-stone-900 mb-0.5">Manage Treatment & Clinical Videos</h4>
-              <p class="text-xs text-stone-500">Add YouTube video links or embed IDs.</p>
+              <p class="text-xs text-stone-500">Add local MP4 video files from your <strong>videos/</strong> folder or YouTube links.</p>
             </div>
             <button onclick="openAddVideoModal()" class="text-xs bg-emerald-700 text-white px-3 py-1.5 rounded-lg font-semibold hover:bg-emerald-800">
               + New Video
@@ -667,7 +758,7 @@
           <div id="adminVideoList" class="space-y-3"></div>
         </div>
 
-        <!-- Tab 3: Testimonials -->
+        <!-- Tab 4: Testimonials -->
         <div id="testimonialsTab" class="hidden space-y-5">
           <div class="flex justify-between items-center">
             <div>
@@ -681,12 +772,12 @@
           <div id="adminTestimonialList" class="space-y-3"></div>
         </div>
 
-        <!-- Tab 4: Photos -->
+        <!-- Tab 5: Photos (Pick from images/ folder or upload) -->
         <div id="photosTab" class="hidden space-y-5">
           <div class="flex justify-between items-center">
             <div>
               <h4 class="text-sm font-bold text-stone-900 mb-0.5">Manage Gallery & Clinic Photos</h4>
-              <p class="text-xs text-stone-500">Add photo links or captions.</p>
+              <p class="text-xs text-stone-500">Select files from your <strong>images/</strong> folder or paste web URLs.</p>
             </div>
             <button onclick="openAddPhotoModal()" class="text-xs bg-emerald-700 text-white px-3 py-1.5 rounded-lg font-semibold hover:bg-emerald-800">
               + New Photo
@@ -699,7 +790,7 @@
     </div>
   </div>
 
-  <!-- Sub-Modal: Add Video -->
+  <!-- Sub-Modal: Add Video (Local MP4 + File Picker OR YouTube) -->
   <div id="addVideoModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
     <div class="bg-white rounded-2xl max-w-md w-full p-6 card-shadow">
       <h3 class="text-base font-bold text-stone-900 font-heading mb-4">Add Treatment Video</h3>
@@ -708,27 +799,78 @@
           <label class="block text-xs font-semibold text-stone-700 mb-1">Video Title *</label>
           <input type="text" id="newVideoTitle" required placeholder="e.g. Acupuncture For Sciatica Relief" class="w-full px-3 py-2 text-xs rounded-xl border border-stone-300">
         </div>
-        <div>
-          <label class="block text-xs font-semibold text-stone-700 mb-1">Category</label>
-          <select id="newVideoCategory" class="w-full px-3 py-2 text-xs rounded-xl border border-stone-300">
-            <option>Acupuncture</option>
-            <option>Spine Decompression</option>
-            <option>Cupping & Hijama</option>
-            <option>Chiropractic</option>
-            <option>Physiotherapy</option>
-          </select>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-stone-700 mb-1">Category</label>
+            <select id="newVideoCategory" class="w-full px-3 py-2 text-xs rounded-xl border border-stone-300">
+              <option>Acupuncture</option>
+              <option>Spine Decompression</option>
+              <option>Cupping & Hijama</option>
+              <option>Chiropractic</option>
+              <option>Physiotherapy</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-stone-700 mb-1">Source Type</label>
+            <select id="newVideoType" onchange="toggleVideoInputSource()" class="w-full px-3 py-2 text-xs rounded-xl border border-stone-300 font-medium">
+              <option value="local">Local MP4 (videos/ folder)</option>
+              <option value="youtube">YouTube URL / Embed</option>
+            </select>
+          </div>
         </div>
-        <div>
-          <label class="block text-xs font-semibold text-stone-700 mb-1">YouTube URL or Video ID *</label>
-          <input type="text" id="newVideoUrl" required placeholder="e.g. dQw4w9WgXcQ or full YouTube link" class="w-full px-3 py-2 text-xs rounded-xl border border-stone-300">
+
+        <!-- Local Video Input -->
+        <div id="localVideoContainer" class="space-y-2 bg-stone-50 p-3 rounded-xl border border-stone-200">
+          <label class="block text-xs font-semibold text-stone-700">1. Select MP4 file from computer:</label>
+          <input type="file" id="localVideoFileInput" accept="video/mp4,video/webm" onchange="onLocalVideoChosen(this)" class="w-full text-xs text-stone-600 file:mr-2 file:py-1 file:px-2.5 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-emerald-100 file:text-emerald-800 hover:file:bg-emerald-200">
+          
+          <label class="block text-xs font-semibold text-stone-700 mt-2">2. Or relative path for web hosting:</label>
+          <input type="text" id="newVideoLocalPath" placeholder="videos/treatment-1.mp4" class="w-full px-3 py-1.5 text-xs rounded-lg border border-stone-300">
+          <span class="text-[10px] text-stone-400 block">When you host the site, place your video in the <strong>videos/</strong> folder and keep this path.</span>
         </div>
+
+        <!-- YouTube Video Input -->
+        <div id="youtubeVideoContainer" class="hidden space-y-1 bg-stone-50 p-3 rounded-xl border border-stone-200">
+          <label class="block text-xs font-semibold text-stone-700">YouTube URL or Video ID:</label>
+          <input type="text" id="newVideoUrl" placeholder="https://youtu.be/... or video ID" class="w-full px-3 py-2 text-xs rounded-xl border border-stone-300">
+        </div>
+
         <div>
           <label class="block text-xs font-semibold text-stone-700 mb-1">Short Description</label>
           <textarea id="newVideoDesc" rows="2" placeholder="Brief details about what is demonstrated..." class="w-full px-3 py-2 text-xs rounded-xl border border-stone-300"></textarea>
         </div>
+        
         <div class="flex gap-2 pt-2">
           <button type="button" onclick="closeAddVideoModal()" class="flex-1 py-2 text-xs bg-stone-100 hover:bg-stone-200 rounded-xl font-semibold">Cancel</button>
           <button type="submit" class="flex-1 py-2 text-xs bg-emerald-700 hover:bg-emerald-800 text-white rounded-xl font-semibold">Save Video</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Sub-Modal: Add Photo (Choose File or Relative Path) -->
+  <div id="addPhotoModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full p-6 card-shadow">
+      <h3 class="text-base font-bold text-stone-900 font-heading mb-4">Add Clinic / Treatment Photo</h3>
+      <form onsubmit="handleSavePhoto(event)" class="space-y-3">
+        <div>
+          <label class="block text-xs font-semibold text-stone-700 mb-1">Photo Caption / Title *</label>
+          <input type="text" id="newPhotoTitle" required placeholder="e.g. Spine Decompression Therapy Room" class="w-full px-3 py-2 text-xs rounded-xl border border-stone-300">
+        </div>
+
+        <div class="bg-stone-50 p-3 rounded-xl border border-stone-200 space-y-2">
+          <label class="block text-xs font-semibold text-stone-700">1. Select image from your computer:</label>
+          <input type="file" id="localPhotoFileInput" accept="image/*" onchange="onLocalPhotoChosen(this)" class="w-full text-xs text-stone-600 file:mr-2 file:py-1 file:px-2.5 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-emerald-100 file:text-emerald-800 hover:file:bg-emerald-200">
+          
+          <label class="block text-xs font-semibold text-stone-700 mt-2">2. Or relative path for web hosting:</label>
+          <input type="text" id="newPhotoUrl" placeholder="images/clinic-room.jpg" class="w-full px-3 py-1.5 text-xs rounded-lg border border-stone-300">
+          <span class="text-[10px] text-stone-400 block">Copy the photo into your <strong>images/</strong> folder, then use <strong>images/filename.jpg</strong> here.</span>
+        </div>
+
+        <div class="flex gap-2 pt-2">
+          <button type="button" onclick="closeAddPhotoModal()" class="flex-1 py-2 text-xs bg-stone-100 hover:bg-stone-200 rounded-xl font-semibold">Cancel</button>
+          <button type="submit" class="flex-1 py-2 text-xs bg-emerald-700 hover:bg-emerald-800 text-white rounded-xl font-semibold">Save Photo</button>
         </div>
       </form>
     </div>
@@ -763,28 +905,6 @@
         <div class="flex gap-2 pt-2">
           <button type="button" onclick="closeAddTestimonialModal()" class="flex-1 py-2 text-xs bg-stone-100 hover:bg-stone-200 rounded-xl font-semibold">Cancel</button>
           <button type="submit" class="flex-1 py-2 text-xs bg-emerald-700 hover:bg-emerald-800 text-white rounded-xl font-semibold">Save Review</button>
-        </div>
-      </form>
-    </div>
-  </div>
-
-  <!-- Sub-Modal: Add Photo -->
-  <div id="addPhotoModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-    <div class="bg-white rounded-2xl max-w-md w-full p-6 card-shadow">
-      <h3 class="text-base font-bold text-stone-900 font-heading mb-4">Add Clinic / Treatment Photo</h3>
-      <form onsubmit="handleSavePhoto(event)" class="space-y-3">
-        <div>
-          <label class="block text-xs font-semibold text-stone-700 mb-1">Photo Caption / Title *</label>
-          <input type="text" id="newPhotoTitle" required placeholder="e.g. Spine Decompression Therapy Room" class="w-full px-3 py-2 text-xs rounded-xl border border-stone-300">
-        </div>
-        <div>
-          <label class="block text-xs font-semibold text-stone-700 mb-1">Image URL *</label>
-          <input type="url" id="newPhotoUrl" required placeholder="https://example.com/photo.jpg" class="w-full px-3 py-2 text-xs rounded-xl border border-stone-300">
-          <p class="text-[10px] text-stone-400 mt-1">Paste any direct image link from Unsplash, Google Drive (direct), or your cloud host.</p>
-        </div>
-        <div class="flex gap-2 pt-2">
-          <button type="button" onclick="closeAddPhotoModal()" class="flex-1 py-2 text-xs bg-stone-100 hover:bg-stone-200 rounded-xl font-semibold">Cancel</button>
-          <button type="submit" class="flex-1 py-2 text-xs bg-emerald-700 hover:bg-emerald-800 text-white rounded-xl font-semibold">Save Photo</button>
         </div>
       </form>
     </div>
@@ -831,34 +951,71 @@
 
   <!-- ==================== JAVASCRIPT ==================== -->
   <script>
-    // Initial Default Data (If not yet in localStorage)
+    const ADMIN_PIN = "1975";
+
+    // Auto-detect Dr. Pawan Goyal's main image from images/ or root
+    const DR_IMAGE_CANDIDATES = [
+      "images/mainpageindividual.jpeg",
+      "images/mainpageindvidual.jpeg",
+      "image/mainpageindividual.jpeg",
+      "image/mainpageindvidual.jpeg",
+      "mainpageindividual.jpeg",
+      "mainpageindvidual.jpeg",
+      "images/dr-pawan-goyal.jpeg",
+      "dr-pawan-goyal.jpeg"
+    ];
+
+    function applyDoctorPhoto(imgElement) {
+      if (!imgElement) return;
+      let currentIndex = 0;
+      function tryNext() {
+        if (currentIndex < DR_IMAGE_CANDIDATES.length) {
+          imgElement.src = DR_IMAGE_CANDIDATES[currentIndex++];
+        } else {
+          imgElement.src = "https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=800&auto=format&fit=crop";
+        }
+      }
+      imgElement.onerror = tryNext;
+      tryNext();
+    }
+
     const DEFAULT_DATA = {
       clinic: {
         address: "Model Town / GT Road, Panipat, Haryana",
         phone: "+91 98765 43210",
         hours: "Mon - Sat: 9:30 AM - 7:00 PM (By Appointment Only)",
-        city: "Panipat, Haryana"
+        city: "Panipat, Haryana",
+        mapLink: "https://www.google.com/maps/place/Panipat,+Haryana"
+      },
+      social: {
+        whatsapp: "https://wa.me/919876543210",
+        youtube: "https://youtube.com",
+        instagram: "https://instagram.com",
+        facebook: "https://facebook.com"
       },
       videos: [
         {
           id: "1",
+          type: "youtube",
           title: "Acupuncture Therapy for Chronic Sciatica & Disc Bulge",
           category: "Acupuncture",
-          youtubeId: "dQw4w9WgXcQ",
+          src: "dQw4w9WgXcQ",
           desc: "Demonstration of distal acupuncture point stimulation to alleviate lower back sciatica pain."
         },
         {
           id: "2",
+          type: "local",
           title: "Computerized Spinal Decompression Machine in Action",
           category: "Spine Decompression",
-          youtubeId: "dQw4w9WgXcQ",
-          desc: "How targeted negative-pressure spinal traction relieves nerve entrapment without surgery."
+          src: "videos/decompression-demo.mp4",
+          desc: "Targeted negative-pressure traction relieving lumbar disc entrapment (Placed in your videos/ folder)."
         },
         {
           id: "3",
+          type: "youtube",
           title: "Wet Cupping (Hijama) for Back Muscle Spasms & Detox",
           category: "Cupping & Hijama",
-          youtubeId: "dQw4w9WgXcQ",
+          src: "dQw4w9WgXcQ",
           desc: "Sterile cupping technique to pull stagnant cellular toxins and restore healthy micro-circulation."
         }
       ],
@@ -889,7 +1046,7 @@
         {
           id: "1",
           title: "Spinal Decompression Unit",
-          url: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=600&auto=format&fit=crop"
+          url: "images/decompression.jpg"
         },
         {
           id: "2",
@@ -909,22 +1066,20 @@
       ]
     };
 
-    // Helper functions for LocalStorage
     function getStoredData() {
-      const data = localStorage.getItem('paavan_niramay_data');
+      const data = localStorage.getItem('paavan_nirmay_data');
       if (!data) {
-        localStorage.setItem('paavan_niramay_data', JSON.stringify(DEFAULT_DATA));
+        localStorage.setItem('paavan_nirmay_data', JSON.stringify(DEFAULT_DATA));
         return DEFAULT_DATA;
       }
       return JSON.parse(data);
     }
 
     function saveStoredData(data) {
-      localStorage.setItem('paavan_niramay_data', JSON.stringify(data));
+      localStorage.setItem('paavan_nirmay_data', JSON.stringify(data));
       renderAll();
     }
 
-    // Toast function
     function showToast(message) {
       const toast = document.getElementById('toast');
       const toastMsg = document.getElementById('toastMsg');
@@ -935,7 +1090,6 @@
       }, 3000);
     }
 
-    // Render Website Contents from LocalStorage
     function renderAll() {
       const data = getStoredData();
 
@@ -954,28 +1108,77 @@
       document.getElementById('contactHoursText').innerText = data.clinic.hours;
       document.getElementById('footerHoursText').innerText = data.clinic.hours;
 
+      // Map Links
+      const mapLink = data.clinic.mapLink || "https://www.google.com/maps/place/Panipat,+Haryana";
+      document.getElementById('btnDirectionsMap').href = mapLink;
+      document.getElementById('mapExternalLink').href = mapLink;
+      document.getElementById('heroMapBtn').href = mapLink;
+      document.getElementById('socialBtnGoogleMap').href = mapLink;
+      document.getElementById('footerSocialMap').href = mapLink;
+
       // Populate Admin Form Fields
       document.getElementById('adminAddressInput').value = data.clinic.address;
       document.getElementById('adminPhoneInput').value = data.clinic.phone;
       document.getElementById('adminHoursInput').value = data.clinic.hours;
+      document.getElementById('adminMapLinkInput').value = mapLink;
 
-      // Render Videos
+      // Social Media Links
+      const soc = data.social || DEFAULT_DATA.social;
+      document.getElementById('adminSocialWhatsApp').value = soc.whatsapp;
+      document.getElementById('adminSocialYouTube').value = soc.youtube;
+      document.getElementById('adminSocialInstagram').value = soc.instagram;
+      document.getElementById('adminSocialFacebook').value = soc.facebook;
+
+      // Top Bar Socials
+      document.getElementById('topSocialWhatsApp').href = soc.whatsapp;
+      document.getElementById('topSocialYouTube').href = soc.youtube;
+      document.getElementById('topSocialInstagram').href = soc.instagram;
+      document.getElementById('topSocialFacebook').href = soc.facebook;
+
+      // Contact Section Social Buttons
+      document.getElementById('socialBtnWhatsApp').href = soc.whatsapp;
+      document.getElementById('socialBtnYouTube').href = soc.youtube;
+      document.getElementById('socialBtnInstagram').href = soc.instagram;
+      document.getElementById('socialBtnFacebook').href = soc.facebook;
+
+      // Footer Socials
+      document.getElementById('footerSocialWhatsApp').href = soc.whatsapp;
+      document.getElementById('footerSocialYouTube').href = soc.youtube;
+      document.getElementById('footerSocialInstagram').href = soc.instagram;
+      document.getElementById('footerSocialFacebook').href = soc.facebook;
+
+      // Render Videos (Both local mp4 and YouTube)
       const videoContainer = document.getElementById('videoContainer');
       const adminVideoList = document.getElementById('adminVideoList');
       videoContainer.innerHTML = '';
       adminVideoList.innerHTML = '';
 
       data.videos.forEach(v => {
-        // Public card
+        const isLocal = (v.type === 'local') || (v.src && (v.src.endsWith('.mp4') || v.src.startsWith('videos/')));
+        
+        let mediaHtml = '';
+        if (isLocal) {
+          mediaHtml = `
+            <video controls class="w-full h-full object-cover bg-black" preload="metadata">
+              <source src="${v.src}" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
+          `;
+        } else {
+          mediaHtml = `
+            <iframe class="w-full h-full" src="https://www.youtube.com/embed/${v.src}" title="${v.title}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          `;
+        }
+
         const card = document.createElement('div');
         card.className = "bg-stone-50 rounded-2xl overflow-hidden border border-stone-200 card-shadow flex flex-col";
         card.innerHTML = `
           <div class="relative aspect-video bg-black flex items-center justify-center">
-            <iframe class="w-full h-full" src="https://www.youtube.com/embed/${v.youtubeId}" title="${v.title}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            ${mediaHtml}
           </div>
           <div class="p-5 flex-1 flex flex-col justify-between">
             <div>
-              <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded">${v.category}</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded">${v.category} &bull; ${isLocal ? 'Local File' : 'YouTube'}</span>
               <h4 class="font-bold text-stone-900 text-sm mt-2 mb-1">${v.title}</h4>
               <p class="text-xs text-stone-500 line-clamp-2">${v.desc || ''}</p>
             </div>
@@ -983,13 +1186,12 @@
         `;
         videoContainer.appendChild(card);
 
-        // Admin List Item
         const adminItem = document.createElement('div');
         adminItem.className = "p-3 bg-stone-50 border border-stone-200 rounded-xl flex items-center justify-between";
         adminItem.innerHTML = `
           <div>
             <div class="font-bold text-xs text-stone-900">${v.title}</div>
-            <div class="text-[11px] text-stone-500">${v.category} &bull; ID: ${v.youtubeId}</div>
+            <div class="text-[11px] text-stone-500">${v.category} &bull; ${isLocal ? 'Path: ' + v.src : 'YouTube ID: ' + v.src}</div>
           </div>
           <button onclick="deleteVideo('${v.id}')" class="text-xs text-rose-600 hover:text-rose-800 font-semibold px-2 py-1">
             <i class="fa-solid fa-trash mr-1"></i> Delete
@@ -1006,8 +1208,6 @@
 
       data.testimonials.forEach(t => {
         const stars = '★'.repeat(t.rating) + '☆'.repeat(5 - t.rating);
-        
-        // Public card
         const card = document.createElement('div');
         card.className = "bg-white p-6 rounded-2xl border border-stone-200/90 card-shadow flex flex-col justify-between";
         card.innerHTML = `
@@ -1027,7 +1227,6 @@
         `;
         testimonialContainer.appendChild(card);
 
-        // Admin List Item
         const adminItem = document.createElement('div');
         adminItem.className = "p-3 bg-stone-50 border border-stone-200 rounded-xl flex items-center justify-between";
         adminItem.innerHTML = `
@@ -1042,29 +1241,27 @@
         adminTestimonialList.appendChild(adminItem);
       });
 
-      // Render Photos
+      // Render Photos (Supports relative images/ paths and fallback)
       const galleryContainer = document.getElementById('galleryContainer');
       const adminPhotoList = document.getElementById('adminPhotoList');
       galleryContainer.innerHTML = '';
       adminPhotoList.innerHTML = '';
 
       data.photos.forEach(p => {
-        // Public card
         const card = document.createElement('div');
         card.className = "relative group rounded-xl overflow-hidden aspect-square bg-stone-100 border border-stone-200";
         card.innerHTML = `
-          <img src="${p.url}" alt="${p.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+          <img src="${p.url}" onerror="this.src='https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=600&auto=format&fit=crop'" alt="${p.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
           <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent opacity-0 group-hover:opacity-100 transition p-3 flex items-end">
             <span class="text-white text-xs font-semibold">${p.title}</span>
           </div>
         `;
         galleryContainer.appendChild(card);
 
-        // Admin Card
         const adminCard = document.createElement('div');
         adminCard.className = "relative rounded-lg overflow-hidden border border-stone-200 aspect-square group bg-stone-100";
         adminCard.innerHTML = `
-          <img src="${p.url}" alt="${p.title}" class="w-full h-full object-cover">
+          <img src="${p.url}" onerror="this.src='https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=600&auto=format&fit=crop'" alt="${p.title}" class="w-full h-full object-cover">
           <div class="absolute inset-0 bg-black/60 p-2 flex flex-col justify-between">
             <span class="text-white text-[10px] truncate">${p.title}</span>
             <button onclick="deletePhoto('${p.id}')" class="text-[11px] bg-rose-600 text-white py-1 px-2 rounded font-semibold w-full hover:bg-rose-700">
@@ -1078,9 +1275,36 @@
       document.getElementById('yearSpan').innerText = new Date().getFullYear();
     }
 
-    // ================= Admin Modal & PIN logic =================
-    const ADMIN_PIN = "1234";
+    // ================= File Picker Helper Functions =================
+    // When a user selects a file from the images folder
+    function onLocalPhotoChosen(input) {
+      if (input.files && input.files[0]) {
+        const file = input.files[0];
+        // Suggest relative path for hosting
+        document.getElementById('newPhotoUrl').value = 'images/' + file.name;
+      }
+    }
 
+    // When a user selects an MP4 video from computer
+    function onLocalVideoChosen(input) {
+      if (input.files && input.files[0]) {
+        const file = input.files[0];
+        document.getElementById('newVideoLocalPath').value = 'videos/' + file.name;
+      }
+    }
+
+    function toggleVideoInputSource() {
+      const type = document.getElementById('newVideoType').value;
+      if (type === 'local') {
+        document.getElementById('localVideoContainer').classList.remove('hidden');
+        document.getElementById('youtubeVideoContainer').classList.add('hidden');
+      } else {
+        document.getElementById('localVideoContainer').classList.add('hidden');
+        document.getElementById('youtubeVideoContainer').classList.remove('hidden');
+      }
+    }
+
+    // ================= Admin Modal & PIN logic =================
     function openAdminModal() {
       document.getElementById('adminPinModal').classList.remove('hidden');
       document.getElementById('adminPinInput').value = '';
@@ -1097,7 +1321,7 @@
         closeAdminPinModal();
         document.getElementById('adminDashboardModal').classList.remove('hidden');
       } else {
-        alert('Incorrect PIN. Please use 1234.');
+        alert('Incorrect PIN. Please enter 1975.');
       }
     }
 
@@ -1106,13 +1330,14 @@
     }
 
     function switchAdminTab(tabId) {
-      ['clinicInfoTab', 'videosTab', 'testimonialsTab', 'photosTab'].forEach(id => {
+      ['clinicInfoTab', 'socialMediaTab', 'videosTab', 'testimonialsTab', 'photosTab'].forEach(id => {
         document.getElementById(id).classList.add('hidden');
       });
       document.getElementById(tabId).classList.remove('hidden');
 
       const tabs = {
         clinicInfoTab: 'btnClinicInfoTab',
+        socialMediaTab: 'btnSocialMediaTab',
         videosTab: 'btnVideosTab',
         testimonialsTab: 'btnTestimonialsTab',
         photosTab: 'btnPhotosTab'
@@ -1129,46 +1354,70 @@
       activeBtn.classList.add('border-emerald-700', 'text-emerald-800');
     }
 
-    // Save Clinic Info
     function saveClinicInfo(e) {
       e.preventDefault();
       const data = getStoredData();
       data.clinic.address = document.getElementById('adminAddressInput').value.trim();
       data.clinic.phone = document.getElementById('adminPhoneInput').value.trim();
       data.clinic.hours = document.getElementById('adminHoursInput').value.trim();
+      data.clinic.mapLink = document.getElementById('adminMapLinkInput').value.trim();
       saveStoredData(data);
-      showToast("Clinic details updated!");
+      showToast("Clinic & Map details updated!");
     }
 
-    // Manage Videos
+    function saveSocialLinks(e) {
+      e.preventDefault();
+      const data = getStoredData();
+      data.social = {
+        whatsapp: document.getElementById('adminSocialWhatsApp').value.trim(),
+        youtube: document.getElementById('adminSocialYouTube').value.trim(),
+        instagram: document.getElementById('adminSocialInstagram').value.trim(),
+        facebook: document.getElementById('adminSocialFacebook').value.trim()
+      };
+      saveStoredData(data);
+      showToast("Social media links saved!");
+    }
+
     function openAddVideoModal() {
       document.getElementById('addVideoModal').classList.remove('hidden');
     }
     function closeAddVideoModal() {
       document.getElementById('addVideoModal').classList.add('hidden');
     }
+
     function handleSaveVideo(e) {
       e.preventDefault();
-      let inputUrl = document.getElementById('newVideoUrl').value.trim();
-      let ytId = inputUrl;
-      if (inputUrl.includes('v=')) {
-        ytId = inputUrl.split('v=')[1].split('&')[0];
-      } else if (inputUrl.includes('youtu.be/')) {
-        ytId = inputUrl.split('youtu.be/')[1].split('?')[0];
+      const type = document.getElementById('newVideoType').value;
+      let finalSrc = "";
+
+      if (type === 'local') {
+        const localPath = document.getElementById('newVideoLocalPath').value.trim();
+        finalSrc = localPath || "videos/video1.mp4";
+      } else {
+        let inputUrl = document.getElementById('newVideoUrl').value.trim();
+        let ytId = inputUrl;
+        if (inputUrl.includes('v=')) {
+          ytId = inputUrl.split('v=')[1].split('&')[0];
+        } else if (inputUrl.includes('youtu.be/')) {
+          ytId = inputUrl.split('youtu.be/')[1].split('?')[0];
+        }
+        finalSrc = ytId;
       }
 
       const data = getStoredData();
       data.videos.unshift({
         id: Date.now().toString(),
+        type: type,
         title: document.getElementById('newVideoTitle').value.trim(),
         category: document.getElementById('newVideoCategory').value,
-        youtubeId: ytId,
+        src: finalSrc,
         desc: document.getElementById('newVideoDesc').value.trim()
       });
       saveStoredData(data);
       closeAddVideoModal();
-      showToast("New video published!");
+      showToast("Video published to gallery!");
     }
+
     function deleteVideo(id) {
       if (confirm("Delete this video?")) {
         const data = getStoredData();
@@ -1178,7 +1427,6 @@
       }
     }
 
-    // Manage Testimonials
     function openAddTestimonialModal() {
       document.getElementById('addTestimonialModal').classList.remove('hidden');
     }
@@ -1208,7 +1456,6 @@
       }
     }
 
-    // Manage Photos
     function openAddPhotoModal() {
       document.getElementById('addPhotoModal').classList.remove('hidden');
     }
@@ -1217,11 +1464,16 @@
     }
     function handleSavePhoto(e) {
       e.preventDefault();
+      let photoUrl = document.getElementById('newPhotoUrl').value.trim();
+      if (!photoUrl) {
+        photoUrl = "images/photo.jpg";
+      }
+
       const data = getStoredData();
       data.photos.unshift({
         id: Date.now().toString(),
         title: document.getElementById('newPhotoTitle').value.trim(),
-        url: document.getElementById('newPhotoUrl').value.trim()
+        url: photoUrl
       });
       saveStoredData(data);
       closeAddPhotoModal();
@@ -1236,15 +1488,13 @@
       }
     }
 
-    // Reset Defaults
     function resetToDefaults() {
-      if (confirm("Reset all clinic details, videos, reviews and photos back to default demo state?")) {
+      if (confirm("Reset all clinic details, videos, reviews and photos back to default state?")) {
         saveStoredData(DEFAULT_DATA);
         showToast("Reset to defaults complete.");
       }
     }
 
-    // Appointment Booking UI
     function openBookingModal() {
       document.getElementById('bookingModal').classList.remove('hidden');
     }
@@ -1257,9 +1507,10 @@
       showToast("Consultation request received! Dr. Goyal's team will call you shortly.");
     }
 
-    // Initial load
     window.addEventListener('DOMContentLoaded', () => {
       renderAll();
+      applyDoctorPhoto(document.getElementById('doctorHeroPhoto'));
+      applyDoctorPhoto(document.getElementById('doctorAboutPhoto'));
     });
   </script>
 </body>
